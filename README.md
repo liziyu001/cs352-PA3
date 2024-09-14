@@ -8,6 +8,6 @@ Thanks to Dr. Changhee Jung at Purdue University for talking through some ideas,
 
 ***
 
-Student Name(s): John Doe
+Student Name(s): Ziyu Li
 
-Student Email(s): boilermaker@purdue.edu
+Student Email(s): li4107@purdue.edu

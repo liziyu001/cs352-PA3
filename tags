@@ -1,0 +1,935 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ALIGN	uscc/ezOptionParser.hpp	/^  enum Layout { ALIGN, INTERLEAVE, STAGGER };$/;"	e	enum:ez::ezOptionParser::Layout
+ASTAddrOfArray	parse/ASTNodes.h	/^class ASTAddrOfArray : public ASTExpr$/;"	c	namespace:uscc::parse
+ASTArgDecl	parse/ASTNodes.h	/^class ASTArgDecl : public ASTNode$/;"	c	namespace:uscc::parse
+ASTArrayExpr	parse/ASTNodes.h	/^class ASTArrayExpr : public ASTExpr$/;"	c	namespace:uscc::parse
+ASTArraySub	parse/ASTNodes.h	/^class ASTArraySub : public ASTNode$/;"	c	namespace:uscc::parse
+ASTAssignArrayStmt	parse/ASTNodes.h	/^class ASTAssignArrayStmt : public ASTStmt$/;"	c	namespace:uscc::parse
+ASTAssignStmt	parse/ASTNodes.h	/^class ASTAssignStmt : public ASTStmt$/;"	c	namespace:uscc::parse
+ASTBadExpr	parse/ASTNodes.h	/^class ASTBadExpr : public ASTExpr$/;"	c	namespace:uscc::parse
+ASTBinaryCmpOp	parse/ASTNodes.h	/^class ASTBinaryCmpOp : public ASTExpr$/;"	c	namespace:uscc::parse
+ASTBinaryMathOp	parse/ASTNodes.h	/^class ASTBinaryMathOp : public ASTExpr$/;"	c	namespace:uscc::parse
+ASTCompoundStmt	parse/ASTNodes.h	/^class ASTCompoundStmt : public ASTStmt$/;"	c	namespace:uscc::parse
+ASTConstantExpr	parse/ASTExpr.cpp	/^ASTConstantExpr::ASTConstantExpr(const std::string& constStr)$/;"	f	class:ASTConstantExpr
+ASTConstantExpr	parse/ASTNodes.h	/^class ASTConstantExpr : public ASTExpr$/;"	c	namespace:uscc::parse
+ASTDecExpr	parse/ASTNodes.h	/^class ASTDecExpr : public ASTExpr$/;"	c	namespace:uscc::parse
+ASTDecl	parse/ASTNodes.h	/^class ASTDecl : public ASTNode$/;"	c	namespace:uscc::parse
+ASTExpr	parse/ASTNodes.h	/^class ASTExpr : public ASTNode$/;"	c	namespace:uscc::parse
+ASTExprStmt	parse/ASTNodes.h	/^class ASTExprStmt : public ASTStmt$/;"	c	namespace:uscc::parse
+ASTFuncExpr	parse/ASTNodes.h	/^class ASTFuncExpr : public ASTExpr$/;"	c	namespace:uscc::parse
+ASTFunction	parse/ASTNodes.h	/^class ASTFunction : public ASTNode$/;"	c	namespace:uscc::parse
+ASTIdentExpr	parse/ASTNodes.h	/^class ASTIdentExpr : public ASTExpr$/;"	c	namespace:uscc::parse
+ASTIfStmt	parse/ASTNodes.h	/^class ASTIfStmt : public ASTStmt$/;"	c	namespace:uscc::parse
+ASTIncExpr	parse/ASTNodes.h	/^class ASTIncExpr : public ASTExpr$/;"	c	namespace:uscc::parse
+ASTLogicalAnd	parse/ASTNodes.h	/^class ASTLogicalAnd : public ASTExpr$/;"	c	namespace:uscc::parse
+ASTLogicalOr	parse/ASTNodes.h	/^class ASTLogicalOr : public ASTExpr$/;"	c	namespace:uscc::parse
+ASTNode	parse/ASTNodes.h	/^	ASTNode() { }$/;"	f	class:uscc::parse::ASTNode
+ASTNode	parse/ASTNodes.h	/^	ASTNode(const ASTNode& copy) { }$/;"	f	class:uscc::parse::ASTNode
+ASTNode	parse/ASTNodes.h	/^class ASTNode$/;"	c	namespace:uscc::parse
+ASTNotExpr	parse/ASTNodes.h	/^class ASTNotExpr : public ASTExpr$/;"	c	namespace:uscc::parse
+ASTNullStmt	parse/ASTNodes.h	/^class ASTNullStmt : public ASTStmt$/;"	c	namespace:uscc::parse
+ASTProgram	parse/ASTNodes.h	/^class ASTProgram : public ASTNode$/;"	c	namespace:uscc::parse
+ASTReturnStmt	parse/ASTNodes.h	/^class ASTReturnStmt : public ASTStmt$/;"	c	namespace:uscc::parse
+ASTStmt	parse/ASTNodes.h	/^class ASTStmt : public ASTNode$/;"	c	namespace:uscc::parse
+ASTStringExpr	parse/ASTExpr.cpp	/^ASTStringExpr::ASTStringExpr(const std::string& str, StringTable& tbl)$/;"	f	class:ASTStringExpr
+ASTStringExpr	parse/ASTNodes.h	/^class ASTStringExpr : public ASTExpr$/;"	c	namespace:uscc::parse
+ASTToCharExpr	parse/ASTNodes.h	/^class ASTToCharExpr : public ASTExpr$/;"	c	namespace:uscc::parse
+ASTToIntExpr	parse/ASTNodes.h	/^class ASTToIntExpr : public ASTExpr$/;"	c	namespace:uscc::parse
+ASTWhileStmt	parse/ASTNodes.h	/^class ASTWhileStmt : public ASTStmt$/;"	c	namespace:uscc::parse
+AST_DECL_PRINT_EMIT	parse/ASTNodes.h	32;"	d
+AST_EMIT	parse/ASTEmit.cpp	/^AST_EMIT(ASTAddrOfArray)$/;"	f
+AST_EMIT	parse/ASTEmit.cpp	/^AST_EMIT(ASTArgDecl)$/;"	f
+AST_EMIT	parse/ASTEmit.cpp	/^AST_EMIT(ASTArrayExpr)$/;"	f
+AST_EMIT	parse/ASTEmit.cpp	/^AST_EMIT(ASTArraySub)$/;"	f
+AST_EMIT	parse/ASTEmit.cpp	/^AST_EMIT(ASTAssignArrayStmt)$/;"	f
+AST_EMIT	parse/ASTEmit.cpp	/^AST_EMIT(ASTAssignStmt)$/;"	f
+AST_EMIT	parse/ASTEmit.cpp	/^AST_EMIT(ASTBadExpr)$/;"	f
+AST_EMIT	parse/ASTEmit.cpp	/^AST_EMIT(ASTBinaryCmpOp)$/;"	f
+AST_EMIT	parse/ASTEmit.cpp	/^AST_EMIT(ASTBinaryMathOp)$/;"	f
+AST_EMIT	parse/ASTEmit.cpp	/^AST_EMIT(ASTCompoundStmt)$/;"	f
+AST_EMIT	parse/ASTEmit.cpp	/^AST_EMIT(ASTConstantExpr)$/;"	f
+AST_EMIT	parse/ASTEmit.cpp	/^AST_EMIT(ASTDecExpr)$/;"	f
+AST_EMIT	parse/ASTEmit.cpp	/^AST_EMIT(ASTDecl)$/;"	f
+AST_EMIT	parse/ASTEmit.cpp	/^AST_EMIT(ASTExprStmt)$/;"	f
+AST_EMIT	parse/ASTEmit.cpp	/^AST_EMIT(ASTFuncExpr)$/;"	f
+AST_EMIT	parse/ASTEmit.cpp	/^AST_EMIT(ASTFunction)$/;"	f
+AST_EMIT	parse/ASTEmit.cpp	/^AST_EMIT(ASTIdentExpr)$/;"	f
+AST_EMIT	parse/ASTEmit.cpp	/^AST_EMIT(ASTIfStmt)$/;"	f
+AST_EMIT	parse/ASTEmit.cpp	/^AST_EMIT(ASTIncExpr)$/;"	f
+AST_EMIT	parse/ASTEmit.cpp	/^AST_EMIT(ASTLogicalAnd)$/;"	f
+AST_EMIT	parse/ASTEmit.cpp	/^AST_EMIT(ASTLogicalOr)$/;"	f
+AST_EMIT	parse/ASTEmit.cpp	/^AST_EMIT(ASTNotExpr)$/;"	f
+AST_EMIT	parse/ASTEmit.cpp	/^AST_EMIT(ASTNullStmt)$/;"	f
+AST_EMIT	parse/ASTEmit.cpp	/^AST_EMIT(ASTProgram)$/;"	f
+AST_EMIT	parse/ASTEmit.cpp	/^AST_EMIT(ASTReturnStmt)$/;"	f
+AST_EMIT	parse/ASTEmit.cpp	/^AST_EMIT(ASTStringExpr)$/;"	f
+AST_EMIT	parse/ASTEmit.cpp	/^AST_EMIT(ASTToCharExpr)$/;"	f
+AST_EMIT	parse/ASTEmit.cpp	/^AST_EMIT(ASTToIntExpr)$/;"	f
+AST_EMIT	parse/ASTEmit.cpp	/^AST_EMIT(ASTWhileStmt)$/;"	f
+AST_EMIT	parse/ASTEmit.cpp	37;"	d	file:
+AST_PRINT	parse/ASTPrint.cpp	24;"	d	file:
+BEGIN	scan/FlexLexer.cpp	128;"	d	file:
+CHECKRANGE	uscc/ezOptionParser.hpp	701;"	d
+CLEAR	uscc/ezOptionParser.hpp	470;"	d
+Char	parse/Types.h	/^	Char,$/;"	m	class:uscc::parse::Type
+CharArray	parse/Types.h	/^	CharArray,$/;"	m	class:uscc::parse::Type
+CmpOptStringPtr	uscc/ezOptionParser.hpp	/^static bool CmpOptStringPtr(std::string * s1, std::string * s2) { $/;"	f	namespace:ez
+CodeContext	parse/Emitter.cpp	/^CodeContext::CodeContext(StringTable& strings)$/;"	f	class:CodeContext
+CodeContext	parse/Emitter.h	/^struct CodeContext$/;"	s	namespace:uscc::parse
+CommandLineToArgvA	uscc/ezOptionParser.hpp	/^static char** CommandLineToArgvA(char* CmdLine, int* _argc) {$/;"	f	namespace:ez
+ConstStr	parse/Symbols.h	/^	ConstStr(std::string& text)$/;"	f	class:uscc::parse::ConstStr
+ConstStr	parse/Symbols.h	/^class ConstStr$/;"	c	namespace:uscc::parse
+ConstantBranch	opt/Passes.h	/^	ConstantBranch() : FunctionPass(ID) {}$/;"	f	struct:uscc::opt::ConstantBranch
+ConstantBranch	opt/Passes.h	/^struct ConstantBranch : public FunctionPass$/;"	s	namespace:uscc::opt
+ConstantOps	opt/Passes.h	/^	ConstantOps() : FunctionPass(ID) {}$/;"	f	struct:uscc::opt::ConstantOps
+ConstantOps	opt/Passes.h	/^struct ConstantOps : public FunctionPass$/;"	s	namespace:uscc::opt
+D	uscc/ezOptionParser.hpp	/^  enum TYPE { NOTYPE=0, S1, U1, S2, U2, S4, U4, S8, U8, F, D, T };$/;"	e	enum:ez::ezOptionValidator::TYPE
+DEBUGLINE	uscc/ezOptionParser.hpp	33;"	d
+DEBUG_PRINT_TOKENS	parse/Parse.cpp	22;"	d	file:
+DOUBLE	uscc/ezOptionParser.hpp	/^  enum TYPE2 { NOTYPE2=0, INT8, UINT8, INT16, UINT16, INT32, UINT32, INT64, UINT64, FLOAT, DOUBLE, TEXT };$/;"	e	enum:ez::ezOptionValidator::TYPE2
+DeadBlocks	opt/Passes.h	/^	DeadBlocks() : FunctionPass(ID) {}$/;"	f	struct:uscc::opt::DeadBlocks
+DeadBlocks	opt/Passes.h	/^struct DeadBlocks : public FunctionPass$/;"	s	namespace:uscc::opt
+ECHO	scan/FlexLexer.cpp	501;"	d	file:
+EOB_ACT_CONTINUE_SCAN	scan/FlexLexer.cpp	170;"	d	file:
+EOB_ACT_END_OF_FILE	scan/FlexLexer.cpp	171;"	d	file:
+EOB_ACT_LAST_MATCH	scan/FlexLexer.cpp	172;"	d	file:
+EOFExcept	parse/ParseExcept.h	/^class EOFExcept : public virtual ParseExcept$/;"	c	namespace:uscc::parse
+EZ_OPTION_PARSER_H	uscc/ezOptionParser.hpp	18;"	d
+EmitTests	tests/testEmit.py	/^class EmitTests(unittest.TestCase):$/;"	c
+EmitTests	tests/testOpt.py	/^class EmitTests(unittest.TestCase):$/;"	c
+Emitter	parse/Emitter.h	/^class Emitter$/;"	c	namespace:uscc::parse
+Error	parse/Parse.h	/^		Error(const std::string& msg, int lineNum, int colNum)$/;"	f	struct:uscc::parse::Parser::Error
+Error	parse/Parse.h	/^	struct Error$/;"	s	class:uscc::parse::Parser
+F	uscc/ezOptionParser.hpp	/^  enum TYPE { NOTYPE=0, S1, U1, S2, U2, S4, U4, S8, U8, F, D, T };$/;"	e	enum:ez::ezOptionValidator::TYPE
+FLEXINT_H	scan/FlexLexer.cpp	34;"	d	file:
+FLEX_BETA	scan/FlexLexer.cpp	14;"	d	file:
+FLEX_SCANNER	scan/FlexLexer.cpp	9;"	d	file:
+FLOAT	uscc/ezOptionParser.hpp	/^  enum TYPE2 { NOTYPE2=0, INT8, UINT8, INT16, UINT16, INT32, UINT32, INT64, UINT64, FLOAT, DOUBLE, TEXT };$/;"	e	enum:ez::ezOptionValidator::TYPE2
+FileNotFound	parse/ParseExcept.h	/^class FileNotFound : public virtual ParseExcept$/;"	c	namespace:uscc::parse
+FreeStrings	uscc/ezOptionParser.hpp	671;"	d
+GE	uscc/ezOptionParser.hpp	/^    GE, \/* value >= list[0] *\/$/;"	e	enum:ez::ezOptionValidator::OP
+GELE	uscc/ezOptionParser.hpp	/^    GELE, \/* list[0] <= value <= list[1] *\/$/;"	e	enum:ez::ezOptionValidator::OP
+GELT	uscc/ezOptionParser.hpp	/^    GELT, \/* list[0] <= value < list[1] *\/$/;"	e	enum:ez::ezOptionValidator::OP
+GT	uscc/ezOptionParser.hpp	/^    GT, \/* value > list[0] *\/$/;"	e	enum:ez::ezOptionValidator::OP
+GTLE	uscc/ezOptionParser.hpp	/^    GTLE, \/* list[0] < value <= list[1] *\/$/;"	e	enum:ez::ezOptionValidator::OP
+GTLT	uscc/ezOptionParser.hpp	/^    GTLT, \/* list[0] < value < list[1] *\/$/;"	e	enum:ez::ezOptionValidator::OP
+ID	opt/ConstantBranch.cpp	/^char uscc::opt::ConstantBranch::ID = 0;$/;"	m	class:uscc::opt::ConstantBranch	file:
+ID	opt/ConstantOps.cpp	/^char uscc::opt::ConstantOps::ID = 0;$/;"	m	class:uscc::opt::ConstantOps	file:
+ID	opt/DeadBlocks.cpp	/^char uscc::opt::DeadBlocks::ID = 0;$/;"	m	class:uscc::opt::DeadBlocks	file:
+ID	opt/LICM.cpp	/^char uscc::opt::LICM::ID = 0;$/;"	m	class:uscc::opt::LICM	file:
+ID	opt/Passes.h	/^	static char ID;$/;"	m	struct:uscc::opt::ConstantBranch
+ID	opt/Passes.h	/^	static char ID;$/;"	m	struct:uscc::opt::ConstantOps
+ID	opt/Passes.h	/^	static char ID;$/;"	m	struct:uscc::opt::DeadBlocks
+ID	opt/Passes.h	/^	static char ID;$/;"	m	struct:uscc::opt::LICM
+IN	uscc/ezOptionParser.hpp	/^    IN \/* if value is in list *\/$/;"	e	enum:ez::ezOptionValidator::OP
+INCPATH	opt/Makefile	/^INCPATH =  -I..\/..\/llvm\/include$/;"	m
+INCPATH	parse/Makefile	/^INCPATH = -I..\/..\/llvm\/include$/;"	m
+INCPATH	scan/Makefile	/^INCPATH =  -I..\/..\/llvm\/include$/;"	m
+INCPATH	uscc/Makefile	/^INCPATH =  -I..\/..\/llvm\/include$/;"	m
+INITIAL	scan/FlexLexer.cpp	463;"	d	file:
+INT16	uscc/ezOptionParser.hpp	/^  enum TYPE2 { NOTYPE2=0, INT8, UINT8, INT16, UINT16, INT32, UINT32, INT64, UINT64, FLOAT, DOUBLE, TEXT };$/;"	e	enum:ez::ezOptionValidator::TYPE2
+INT16_MAX	scan/FlexLexer.cpp	76;"	d	file:
+INT16_MIN	scan/FlexLexer.cpp	67;"	d	file:
+INT32	uscc/ezOptionParser.hpp	/^  enum TYPE2 { NOTYPE2=0, INT8, UINT8, INT16, UINT16, INT32, UINT32, INT64, UINT64, FLOAT, DOUBLE, TEXT };$/;"	e	enum:ez::ezOptionValidator::TYPE2
+INT32_MAX	scan/FlexLexer.cpp	79;"	d	file:
+INT32_MIN	scan/FlexLexer.cpp	70;"	d	file:
+INT64	uscc/ezOptionParser.hpp	/^  enum TYPE2 { NOTYPE2=0, INT8, UINT8, INT16, UINT16, INT32, UINT32, INT64, UINT64, FLOAT, DOUBLE, TEXT };$/;"	e	enum:ez::ezOptionValidator::TYPE2
+INT8	uscc/ezOptionParser.hpp	/^  enum TYPE2 { NOTYPE2=0, INT8, UINT8, INT16, UINT16, INT32, UINT32, INT64, UINT64, FLOAT, DOUBLE, TEXT };$/;"	e	enum:ez::ezOptionValidator::TYPE2
+INT8_MAX	scan/FlexLexer.cpp	73;"	d	file:
+INT8_MIN	scan/FlexLexer.cpp	64;"	d	file:
+INTERLEAVE	uscc/ezOptionParser.hpp	/^  enum Layout { ALIGN, INTERLEAVE, STAGGER };$/;"	e	enum:ez::ezOptionParser::Layout
+Identifier	parse/Symbols.h	/^	Identifier(const char* name)$/;"	f	class:uscc::parse::Identifier
+Identifier	parse/Symbols.h	/^class Identifier$/;"	c	namespace:uscc::parse
+Int	parse/Types.h	/^	Int,$/;"	m	class:uscc::parse::Type
+IntArray	parse/Types.h	/^	IntArray,$/;"	m	class:uscc::parse::Type
+LE	uscc/ezOptionParser.hpp	/^    LE, \/* value <= list[0] *\/$/;"	e	enum:ez::ezOptionValidator::OP
+LIBPATH	uscc/Makefile	/^LIBPATH = -L..\/..\/lib $/;"	m
+LIBS	uscc/Makefile	/^LIBS = ..\/parse\/libparse.a ..\/opt\/libopt.a ..\/scan\/libscan.a$/;"	m
+LICM	opt/Passes.h	/^	LICM() : LoopPass(ID) {}$/;"	f	struct:uscc::opt::LICM
+LICM	opt/Passes.h	/^struct LICM : public LoopPass$/;"	s	namespace:uscc::opt
+LT	uscc/ezOptionParser.hpp	/^    LT, \/* value < list[0] *\/$/;"	e	enum:ez::ezOptionValidator::OP
+Layout	uscc/ezOptionParser.hpp	/^  enum Layout { ALIGN, INTERLEAVE, STAGGER };$/;"	g	class:ez::ezOptionParser
+Lengths	scan/Tokens.cpp	/^const int* Token::Lengths = Lengths_data;$/;"	m	class:Token	file:
+Lengths	scan/Tokens.h	/^	static const int* Lengths;$/;"	m	struct:uscc::scan::Token
+Lengths_data	scan/Tokens.cpp	/^static const int Lengths_data[] =$/;"	m	namespace:__anon2	file:
+LexerError	scan/FlexLexer.cpp	/^void yyFlexLexer::LexerError( const char* msg )$/;"	f	class:yyFlexLexer
+LexerInput	scan/FlexLexer.cpp	/^int yyFlexLexer::LexerInput( char* buf, int \/* max_size *\/ )$/;"	f	class:yyFlexLexer
+LexerOutput	scan/FlexLexer.cpp	/^void yyFlexLexer::LexerOutput( const char* buf, int size )$/;"	f	class:yyFlexLexer
+NOOP	uscc/ezOptionParser.hpp	/^  enum OP { NOOP=0, $/;"	e	enum:ez::ezOptionValidator::OP
+NOTYPE	uscc/ezOptionParser.hpp	/^  enum TYPE { NOTYPE=0, S1, U1, S2, U2, S4, U4, S8, U8, F, D, T };$/;"	e	enum:ez::ezOptionValidator::TYPE
+NOTYPE2	uscc/ezOptionParser.hpp	/^  enum TYPE2 { NOTYPE2=0, INT8, UINT8, INT16, UINT16, INT32, UINT32, INT64, UINT64, FLOAT, DOUBLE, TEXT };$/;"	e	enum:ez::ezOptionValidator::TYPE2
+Names	scan/Tokens.cpp	/^const char** Token::Names = Names_data;$/;"	m	class:Token	file:
+Names	scan/Tokens.h	/^	static const char** Names;$/;"	m	struct:uscc::scan::Token
+Names_data	scan/Tokens.cpp	/^static const char* Names_data[] =$/;"	m	namespace:__anon2	file:
+OBJS	opt/Makefile	/^OBJS = ConstantBranch.o ConstantOps.o DeadBlocks.o SSABuilder.o LICM.o Passes.o$/;"	m
+OBJS	parse/Makefile	/^OBJS = ASTEmit.o ASTExpr.o ASTNodes.o ASTPrint.o ASTStmt.o Emitter.o Parse.o ParseExcept.o ParseExpr.o ParseStmt.o Symbols.o $/;"	m
+OBJS	scan/Makefile	/^OBJS = FlexLexer.o Tokens.o$/;"	m
+OBJS	uscc/Makefile	/^OBJS = main.o $/;"	m
+OP	uscc/ezOptionParser.hpp	/^  enum OP { NOOP=0, $/;"	g	class:ez::ezOptionValidator
+OperandMissing	parse/ParseExcept.h	/^	OperandMissing(scan::Token::Tokens op)$/;"	f	class:uscc::parse::OperandMissing
+OperandMissing	parse/ParseExcept.h	/^class OperandMissing : public virtual ParseExcept$/;"	c	namespace:uscc::parse
+OptionGroup	uscc/ezOptionParser.hpp	/^  OptionGroup() : delim(0), expectArgs(0), isSet(false), isRequired(false) { }$/;"	f	class:ez::OptionGroup
+OptionGroup	uscc/ezOptionParser.hpp	/^class OptionGroup {$/;"	c	namespace:ez
+ParseExcept	parse/ParseExcept.h	/^class ParseExcept : public virtual std::exception$/;"	c	namespace:uscc::parse
+ParseExceptMsg	parse/ParseExcept.h	/^	ParseExceptMsg(const char* msg)$/;"	f	class:uscc::parse::ParseExceptMsg
+ParseExceptMsg	parse/ParseExcept.h	/^class ParseExceptMsg : public virtual ParseExcept$/;"	c	namespace:uscc::parse
+ParseTests	tests/testParse.py	/^class ParseTests(unittest.TestCase):$/;"	c
+Parser	parse/Parse.cpp	/^Parser::Parser(const char* fileName, std::ostream* errStream,$/;"	f	class:Parser
+Parser	parse/Parse.h	/^	Parser(const Parser& copy) { }$/;"	f	class:uscc::parse::Parser
+Parser	parse/Parse.h	/^class Parser$/;"	c	namespace:uscc::parse
+REJECT	scan/FlexLexer.cpp	451;"	d	file:
+S1	uscc/ezOptionParser.hpp	/^  enum TYPE { NOTYPE=0, S1, U1, S2, U2, S4, U4, S8, U8, F, D, T };$/;"	e	enum:ez::ezOptionValidator::TYPE
+S2	uscc/ezOptionParser.hpp	/^  enum TYPE { NOTYPE=0, S1, U1, S2, U2, S4, U4, S8, U8, F, D, T };$/;"	e	enum:ez::ezOptionValidator::TYPE
+S4	uscc/ezOptionParser.hpp	/^  enum TYPE { NOTYPE=0, S1, U1, S2, U2, S4, U4, S8, U8, F, D, T };$/;"	e	enum:ez::ezOptionValidator::TYPE
+S8	uscc/ezOptionParser.hpp	/^  enum TYPE { NOTYPE=0, S1, U1, S2, U2, S4, U4, S8, U8, F, D, T };$/;"	e	enum:ez::ezOptionValidator::TYPE
+SIZE_MAX	scan/FlexLexer.cpp	92;"	d	file:
+SRCS	opt/Makefile	/^SRCS = $(OBJS:.o=.cpp)$/;"	m
+SRCS	parse/Makefile	/^SRCS = $(OBJS:.o=.cpp)$/;"	m
+SRCS	scan/Makefile	/^SRCS = $(OBJS:.o=.cpp)$/;"	m
+SRCS	uscc/Makefile	/^SRCS = $(OBJS:.o=.cpp) $/;"	m
+SSABuilder	opt/SSABuilder.h	/^class SSABuilder$/;"	c	namespace:uscc::opt
+STAGGER	uscc/ezOptionParser.hpp	/^  enum Layout { ALIGN, INTERLEAVE, STAGGER };$/;"	e	enum:ez::ezOptionParser::Layout
+ScopeTable	parse/Symbols.h	/^	class ScopeTable$/;"	c	class:uscc::parse::SymbolTable
+SemantTests	tests/testSemant.py	/^class SemantTests(unittest.TestCase):$/;"	c
+SplitDelim	uscc/ezOptionParser.hpp	/^static void SplitDelim( const std::string& s, const char token, std::list<std::string*> & result) {$/;"	f	namespace:ez
+SplitDelim	uscc/ezOptionParser.hpp	/^static void SplitDelim( const std::string& s, const char token, std::vector<std::string*> * result) {$/;"	f	namespace:ez
+SplitDelim	uscc/ezOptionParser.hpp	/^static void SplitDelim( const std::string& s, const char token, std::vector<std::string> & result) {$/;"	f	namespace:ez
+StringTable	parse/Symbols.h	/^class StringTable$/;"	c	namespace:uscc::parse
+StringsToDoubles	uscc/ezOptionParser.hpp	/^static void StringsToDoubles(std::vector<std::string*> * strings, std::vector<double> * out) {$/;"	f	namespace:ez
+StringsToDoubles	uscc/ezOptionParser.hpp	/^static void StringsToDoubles(std::vector<std::string> & strings, std::vector<double> & out) {$/;"	f	namespace:ez
+StringsToFloats	uscc/ezOptionParser.hpp	/^static void StringsToFloats(std::vector<std::string*> * strings, std::vector<float> * out) {$/;"	f	namespace:ez
+StringsToFloats	uscc/ezOptionParser.hpp	/^static void StringsToFloats(std::vector<std::string> & strings, std::vector<float> & out) {$/;"	f	namespace:ez
+StringsToInts	uscc/ezOptionParser.hpp	/^static void StringsToInts(std::vector<std::string*> * strings, std::vector<int> * out) {$/;"	f	namespace:ez
+StringsToInts	uscc/ezOptionParser.hpp	/^static void StringsToInts(std::vector<std::string> & strings, std::vector<int> & out) {$/;"	f	namespace:ez
+StringsToLongs	uscc/ezOptionParser.hpp	/^static void StringsToLongs(std::vector<std::string*> * strings, std::vector<long> * out) {$/;"	f	namespace:ez
+StringsToLongs	uscc/ezOptionParser.hpp	/^static void StringsToLongs(std::vector<std::string> & strings, std::vector<long> & out) {$/;"	f	namespace:ez
+StringsToStrings	uscc/ezOptionParser.hpp	/^static void StringsToStrings(std::vector<std::string*> * strings, std::vector<std::string> * out) {$/;"	f	namespace:ez
+StringsToULongs	uscc/ezOptionParser.hpp	/^static void StringsToULongs(std::vector<std::string*> * strings, std::vector<unsigned long> * out) {$/;"	f	namespace:ez
+StringsToULongs	uscc/ezOptionParser.hpp	/^static void StringsToULongs(std::vector<std::string> & strings, std::vector<unsigned long> & out) {$/;"	f	namespace:ez
+SubMap	opt/SSABuilder.h	/^	typedef std::unordered_map<parse::Identifier*, llvm::Value*> SubMap;$/;"	t	class:uscc::opt::SSABuilder
+SubPHI	opt/SSABuilder.h	/^	typedef std::unordered_map<parse::Identifier*, llvm::PHINode*> SubPHI;$/;"	t	class:uscc::opt::SSABuilder
+SymbolTable	parse/Symbols.h	/^class SymbolTable$/;"	c	namespace:uscc::parse
+T	uscc/ezOptionParser.hpp	/^  enum TYPE { NOTYPE=0, S1, U1, S2, U2, S4, U4, S8, U8, F, D, T };$/;"	e	enum:ez::ezOptionValidator::TYPE
+TEXT	uscc/ezOptionParser.hpp	/^  enum TYPE2 { NOTYPE2=0, INT8, UINT8, INT16, UINT16, INT32, UINT32, INT64, UINT64, FLOAT, DOUBLE, TEXT };$/;"	e	enum:ez::ezOptionValidator::TYPE2
+TOKEN	scan/Tokens.cpp	25;"	d	file:
+TOKEN	scan/Tokens.cpp	27;"	d	file:
+TOKEN	scan/Tokens.cpp	32;"	d	file:
+TOKEN	scan/Tokens.cpp	34;"	d	file:
+TOKEN	scan/Tokens.cpp	39;"	d	file:
+TOKEN	scan/Tokens.cpp	41;"	d	file:
+TOKEN	scan/Tokens.h	30;"	d
+TOKEN	scan/Tokens.h	32;"	d
+TYPE	uscc/ezOptionParser.hpp	/^  enum TYPE { NOTYPE=0, S1, U1, S2, U2, S4, U4, S8, U8, F, D, T };$/;"	g	class:ez::ezOptionValidator
+TYPE2	uscc/ezOptionParser.hpp	/^  enum TYPE2 { NOTYPE2=0, INT8, UINT8, INT16, UINT16, INT32, UINT32, INT64, UINT64, FLOAT, DOUBLE, TEXT };$/;"	g	class:ez::ezOptionValidator
+ToArray	uscc/ezOptionParser.hpp	677;"	d
+ToD	uscc/ezOptionParser.hpp	/^static void ToD(std::string ** strings, double * out, int n) {$/;"	f	namespace:ez
+ToF	uscc/ezOptionParser.hpp	/^static void ToF(std::string ** strings, float * out, int n) {$/;"	f	namespace:ez
+ToLowerASCII	uscc/ezOptionParser.hpp	/^static void ToLowerASCII(std::string & s) {$/;"	f	namespace:ez
+ToS1	uscc/ezOptionParser.hpp	/^static void ToS1(std::string ** strings, char * out, int n) {$/;"	f	namespace:ez
+ToS2	uscc/ezOptionParser.hpp	/^static void ToS2(std::string ** strings, short * out, int n) {$/;"	f	namespace:ez
+ToS4	uscc/ezOptionParser.hpp	/^static void ToS4(std::string ** strings, int * out, int n) {$/;"	f	namespace:ez
+ToS8	uscc/ezOptionParser.hpp	/^static void ToS8(std::string ** strings, long long * out, int n) {$/;"	f	namespace:ez
+ToU1	uscc/ezOptionParser.hpp	/^static void ToU1(std::string ** strings, unsigned char * out, int n) {$/;"	f	namespace:ez
+ToU2	uscc/ezOptionParser.hpp	/^static void ToU2(std::string ** strings, unsigned short * out, int n) {$/;"	f	namespace:ez
+ToU4	uscc/ezOptionParser.hpp	/^static void ToU4(std::string ** strings, unsigned int * out, int n) {$/;"	f	namespace:ez
+ToU8	uscc/ezOptionParser.hpp	/^static void ToU8(std::string ** strings, unsigned long long * out, int n) {$/;"	f	namespace:ez
+Token	scan/Tokens.h	/^struct Token$/;"	s	namespace:uscc::scan
+TokenMismatch	parse/ParseExcept.h	/^	TokenMismatch(scan::Token::Tokens expected, scan::Token::Tokens actual,$/;"	f	class:uscc::parse::TokenMismatch
+TokenMismatch	parse/ParseExcept.h	/^class TokenMismatch : public virtual ParseExcept$/;"	c	namespace:uscc::parse
+Tokens	scan/Tokens.h	/^	enum Tokens$/;"	g	struct:uscc::scan::Token
+Type	parse/Types.h	/^enum class Type$/;"	c	namespace:uscc::parse
+U1	uscc/ezOptionParser.hpp	/^  enum TYPE { NOTYPE=0, S1, U1, S2, U2, S4, U4, S8, U8, F, D, T };$/;"	e	enum:ez::ezOptionValidator::TYPE
+U2	uscc/ezOptionParser.hpp	/^  enum TYPE { NOTYPE=0, S1, U1, S2, U2, S4, U4, S8, U8, F, D, T };$/;"	e	enum:ez::ezOptionValidator::TYPE
+U4	uscc/ezOptionParser.hpp	/^  enum TYPE { NOTYPE=0, S1, U1, S2, U2, S4, U4, S8, U8, F, D, T };$/;"	e	enum:ez::ezOptionValidator::TYPE
+U8	uscc/ezOptionParser.hpp	/^  enum TYPE { NOTYPE=0, S1, U1, S2, U2, S4, U4, S8, U8, F, D, T };$/;"	e	enum:ez::ezOptionValidator::TYPE
+UINT16	uscc/ezOptionParser.hpp	/^  enum TYPE2 { NOTYPE2=0, INT8, UINT8, INT16, UINT16, INT32, UINT32, INT64, UINT64, FLOAT, DOUBLE, TEXT };$/;"	e	enum:ez::ezOptionValidator::TYPE2
+UINT16_MAX	scan/FlexLexer.cpp	85;"	d	file:
+UINT32	uscc/ezOptionParser.hpp	/^  enum TYPE2 { NOTYPE2=0, INT8, UINT8, INT16, UINT16, INT32, UINT32, INT64, UINT64, FLOAT, DOUBLE, TEXT };$/;"	e	enum:ez::ezOptionValidator::TYPE2
+UINT32_MAX	scan/FlexLexer.cpp	88;"	d	file:
+UINT64	uscc/ezOptionParser.hpp	/^  enum TYPE2 { NOTYPE2=0, INT8, UINT8, INT16, UINT16, INT32, UINT32, INT64, UINT64, FLOAT, DOUBLE, TEXT };$/;"	e	enum:ez::ezOptionValidator::TYPE2
+UINT8	uscc/ezOptionParser.hpp	/^  enum TYPE2 { NOTYPE2=0, INT8, UINT8, INT16, UINT16, INT32, UINT32, INT64, UINT64, FLOAT, DOUBLE, TEXT };$/;"	e	enum:ez::ezOptionValidator::TYPE2
+UINT8_MAX	scan/FlexLexer.cpp	82;"	d	file:
+UnknownToken	parse/ParseExcept.h	/^	UnknownToken(const char* tokStr, unsigned int& colNum)$/;"	f	class:uscc::parse::UnknownToken
+UnknownToken	parse/ParseExcept.h	/^class UnknownToken : public virtual ParseExcept$/;"	c	namespace:uscc::parse
+VALIDATE	uscc/ezOptionParser.hpp	822;"	d
+ValidatorMap	uscc/ezOptionParser.hpp	/^typedef std::map< int, ezOptionValidator* > ValidatorMap;$/;"	t	namespace:ez
+Values	scan/Tokens.cpp	/^const char** Token::Values = Values_data;$/;"	m	class:Token	file:
+Values	scan/Tokens.h	/^	static const char** Values;$/;"	m	struct:uscc::scan::Token
+Values_data	scan/Tokens.cpp	/^static const char* Values_data[] =$/;"	m	namespace:__anon2	file:
+Void	parse/Types.h	/^	Void = 0,$/;"	m	class:uscc::parse::Type
+YYSTATE	scan/FlexLexer.cpp	134;"	d	file:
+YYTABLES_NAME	scan/FlexLexer.cpp	1845;"	d	file:
+YY_AT_BOL	scan/FlexLexer.cpp	295;"	d	file:
+YY_BREAK	scan/FlexLexer.cpp	552;"	d	file:
+YY_BUFFER_EOF_PENDING	scan/FlexLexer.cpp	253;"	d	file:
+YY_BUFFER_NEW	scan/FlexLexer.cpp	241;"	d	file:
+YY_BUFFER_NORMAL	scan/FlexLexer.cpp	242;"	d	file:
+YY_BUFFER_STATE	scan/FlexLexer.cpp	/^typedef struct yy_buffer_state *YY_BUFFER_STATE;$/;"	t	typeref:struct:yy_buffer_state	file:
+YY_BUF_SIZE	scan/FlexLexer.cpp	148;"	d	file:
+YY_BUF_SIZE	scan/FlexLexer.cpp	150;"	d	file:
+YY_CHAR	scan/FlexLexer.cpp	/^typedef flex_uint8_t YY_CHAR;$/;"	t	file:
+YY_CURRENT_BUFFER	scan/FlexLexer.cpp	264;"	d	file:
+YY_CURRENT_BUFFER_LVALUE	scan/FlexLexer.cpp	270;"	d	file:
+YY_DECL	scan/FlexLexer.cpp	540;"	d	file:
+YY_DECL_IS_OURS	scan/FlexLexer.cpp	539;"	d	file:
+YY_DO_BEFORE_ACTION	scan/FlexLexer.cpp	311;"	d	file:
+YY_END_OF_BUFFER	scan/FlexLexer.cpp	318;"	d	file:
+YY_END_OF_BUFFER_CHAR	scan/FlexLexer.cpp	139;"	d	file:
+YY_EXIT_FAILURE	scan/FlexLexer.cpp	1769;"	d	file:
+YY_EXTRA_TYPE	scan/FlexLexer.cpp	474;"	d	file:
+YY_FATAL_ERROR	scan/FlexLexer.cpp	530;"	d	file:
+YY_FLEX_MAJOR_VERSION	scan/FlexLexer.cpp	10;"	d	file:
+YY_FLEX_MINOR_VERSION	scan/FlexLexer.cpp	11;"	d	file:
+YY_FLEX_SUBMINOR_VERSION	scan/FlexLexer.cpp	12;"	d	file:
+YY_INPUT	scan/FlexLexer.cpp	508;"	d	file:
+YY_INTERACTIVE	scan/FlexLexer.cpp	302;"	d	file:
+YY_INT_ALIGNED	scan/FlexLexer.cpp	5;"	d	file:
+YY_LESS_LINENO	scan/FlexLexer.cpp	174;"	d	file:
+YY_LINENO_REWIND_TO	scan/FlexLexer.cpp	175;"	d	file:
+YY_MORE_ADJ	scan/FlexLexer.cpp	453;"	d	file:
+YY_NEW_FILE	scan/FlexLexer.cpp	138;"	d	file:
+YY_NO_UNISTD_H	scan/FlexLexer.cpp	456;"	d	file:
+YY_NULL	scan/FlexLexer.cpp	117;"	d	file:
+YY_NUM_RULES	scan/FlexLexer.cpp	317;"	d	file:
+YY_READ_BUF_SIZE	scan/FlexLexer.cpp	493;"	d	file:
+YY_READ_BUF_SIZE	scan/FlexLexer.cpp	495;"	d	file:
+YY_RESTORE_YY_MORE_OFFSET	scan/FlexLexer.cpp	454;"	d	file:
+YY_RULE_SETUP	scan/FlexLexer.cpp	555;"	d	file:
+YY_SC_TO_UI	scan/FlexLexer.cpp	122;"	d	file:
+YY_SKIP_YYWRAP	scan/FlexLexer.cpp	298;"	d	file:
+YY_START	scan/FlexLexer.cpp	133;"	d	file:
+YY_START_STACK_INCR	scan/FlexLexer.cpp	525;"	d	file:
+YY_STATE_BUF_SIZE	scan/FlexLexer.cpp	156;"	d	file:
+YY_STATE_EOF	scan/FlexLexer.cpp	136;"	d	file:
+YY_STRUCT_YY_BUFFER_STATE	scan/FlexLexer.cpp	193;"	d	file:
+YY_TYPEDEF_YY_BUFFER_STATE	scan/FlexLexer.cpp	159;"	d	file:
+YY_TYPEDEF_YY_SIZE_T	scan/FlexLexer.cpp	164;"	d	file:
+YY_USER_ACTION	scan/FlexLexer.cpp	547;"	d	file:
+__STDC_LIMIT_MACROS	scan/FlexLexer.cpp	44;"	d	file:
+__unittest	tests/testEmit.py	/^__unittest = True$/;"	v
+__unittest	tests/testOpt.py	/^__unittest = True$/;"	v
+__unittest	tests/testParse.py	/^__unittest = True$/;"	v
+__unittest	tests/testSemant.py	/^__unittest = True$/;"	v
+_id	uscc/ezOptionParser.hpp	/^  short _id;$/;"	m	class:ez::ezOptionParserIDGenerator
+add	uscc/ezOptionParser.hpp	/^void ezOptionParser::add(const char * defaults, bool required, int expectArgs, char delim, const char * help, const char * flag1, const char * flag2, const char * flag3, const char * flag4, ezOptionValidator* validator) {$/;"	f	class:ez::ezOptionParser
+add	uscc/ezOptionParser.hpp	/^void ezOptionParser::add(const char * defaults, bool required, int expectArgs, char delim, const char * help, const char * flag1, const char * flag2, const char * flag3, ezOptionValidator* validator) {$/;"	f	class:ez::ezOptionParser
+add	uscc/ezOptionParser.hpp	/^void ezOptionParser::add(const char * defaults, bool required, int expectArgs, char delim, const char * help, const char * flag1, const char * flag2, ezOptionValidator* validator) {$/;"	f	class:ez::ezOptionParser
+add	uscc/ezOptionParser.hpp	/^void ezOptionParser::add(const char * defaults, bool required, int expectArgs, char delim, const char * help, const char * flag1, ezOptionValidator* validator) {$/;"	f	class:ez::ezOptionParser
+addBlock	opt/SSABuilder.cpp	/^void SSABuilder::addBlock(BasicBlock* block, bool isSealed \/* = false *\/)$/;"	f	class:SSABuilder
+addIdentifier	parse/Symbols.cpp	/^void SymbolTable::ScopeTable::addIdentifier(Identifier* ident)$/;"	f	class:SymbolTable::ScopeTable
+addPhiOperands	opt/SSABuilder.cpp	/^Value* SSABuilder::addPhiOperands(Identifier* var, PHINode* phi)$/;"	f	class:SSABuilder
+args	uscc/ezOptionParser.hpp	/^  std::vector< std::vector< std::string* > * > args;$/;"	m	class:ez::OptionGroup
+checkAST	tests/testParse.py	/^	def checkAST(self, fileName):$/;"	m	class:ParseTests
+checkAST	tests/testSemant.py	/^	def checkAST(self, fileName):$/;"	m	class:SemantTests
+checkEmit	tests/testEmit.py	/^	def checkEmit(self, fileName):$/;"	m	class:EmitTests
+checkEmit	tests/testOpt.py	/^	def checkEmit(self, fileName):$/;"	m	class:EmitTests
+checkError	tests/testParse.py	/^	def checkError(self, fileName):$/;"	m	class:ParseTests
+checkError	tests/testSemant.py	/^	def checkError(self, fileName):$/;"	m	class:SemantTests
+clearArgs	uscc/ezOptionParser.hpp	/^void OptionGroup::clearArgs() {$/;"	f	class:ez::OptionGroup
+consumeToken	parse/Parse.cpp	/^void Parser::consumeToken(bool unknownIsExcept)$/;"	f	class:Parser
+createIdentifier	parse/Symbols.cpp	/^Identifier* SymbolTable::createIdentifier(const char* name)$/;"	f	class:SymbolTable
+ctor_common	scan/FlexLexer.cpp	/^void yyFlexLexer::ctor_common()$/;"	f	class:yyFlexLexer
+d	uscc/ezOptionParser.hpp	/^    double *d;$/;"	m	union:ez::ezOptionValidator::__anon1
+defaults	uscc/ezOptionParser.hpp	/^  std::string defaults;$/;"	m	class:ez::OptionGroup
+delim	uscc/ezOptionParser.hpp	/^  char delim;$/;"	m	class:ez::OptionGroup
+doublespace	uscc/ezOptionParser.hpp	/^  char doublespace;$/;"	m	class:ez::ezOptionParser
+emitIR	parse/Symbols.cpp	/^void SymbolTable::ScopeTable::emitIR(CodeContext& ctx)$/;"	f	class:SymbolTable::ScopeTable
+endl	parse/ASTPrint.cpp	/^	output << "Program:" << std::endl;$/;"	m	class:std	file:
+enterScope	parse/Symbols.cpp	/^SymbolTable::ScopeTable* SymbolTable::enterScope()$/;"	f	class:SymbolTable
+example	uscc/ezOptionParser.hpp	/^  std::string example;$/;"	m	class:ez::ezOptionParser
+exitScope	parse/Symbols.cpp	/^void SymbolTable::exitScope()$/;"	f	class:SymbolTable
+expectArgs	uscc/ezOptionParser.hpp	/^  int expectArgs;$/;"	m	class:ez::OptionGroup
+exportFile	uscc/ezOptionParser.hpp	/^bool ezOptionParser::exportFile(const char * filename, bool all) {$/;"	f	class:ez::ezOptionParser
+extension	tests/emit.py	/^extension = ".output"$/;"	v
+extension	tests/expected.py	/^extension = ".semant.ast"$/;"	v
+ez	uscc/ezOptionParser.hpp	/^namespace ez {$/;"	n
+ezOptionParser	uscc/ezOptionParser.hpp	/^class ezOptionParser {$/;"	c	namespace:ez
+ezOptionParserIDGenerator	uscc/ezOptionParser.hpp	/^  ezOptionParserIDGenerator() : _id(-1) {}$/;"	f	class:ez::ezOptionParserIDGenerator
+ezOptionParserIDGenerator	uscc/ezOptionParser.hpp	/^class ezOptionParserIDGenerator {$/;"	c	namespace:ez
+ezOptionValidator	uscc/ezOptionParser.hpp	/^class ezOptionValidator {$/;"	c	namespace:ez
+ezOptionValidator	uscc/ezOptionParser.hpp	/^ezOptionValidator::ezOptionValidator(char _type) : insensitive(0), op(0), size(0), s1(0), type(_type), quiet(0) {$/;"	f	class:ez::ezOptionValidator
+ezOptionValidator	uscc/ezOptionParser.hpp	/^ezOptionValidator::ezOptionValidator(char _type, char _op, const char* list, int _size) : insensitive(0), op(_op), size(_size), s1(0), type(_type), quiet(0) {$/;"	f	class:ez::ezOptionValidator
+ezOptionValidator	uscc/ezOptionParser.hpp	/^ezOptionValidator::ezOptionValidator(char _type, char _op, const char** list, int _size, bool _insensitive) : insensitive(_insensitive), op(_op), size(_size), t(0), type(_type), quiet(0) {$/;"	f	class:ez::ezOptionValidator
+ezOptionValidator	uscc/ezOptionParser.hpp	/^ezOptionValidator::ezOptionValidator(char _type, char _op, const double* list, int _size) : insensitive(0), op(_op), size(_size), d(0), type(_type), quiet(0) {$/;"	f	class:ez::ezOptionValidator
+ezOptionValidator	uscc/ezOptionParser.hpp	/^ezOptionValidator::ezOptionValidator(char _type, char _op, const float* list, int _size) : insensitive(0), op(_op), size(_size), f(0), type(_type), quiet(0) {$/;"	f	class:ez::ezOptionValidator
+ezOptionValidator	uscc/ezOptionParser.hpp	/^ezOptionValidator::ezOptionValidator(char _type, char _op, const int* list, int _size) : insensitive(0), op(_op), size(_size), s4(0), type(_type), quiet(0) {$/;"	f	class:ez::ezOptionValidator
+ezOptionValidator	uscc/ezOptionParser.hpp	/^ezOptionValidator::ezOptionValidator(char _type, char _op, const long long* list, int _size) : insensitive(0), op(_op), size(_size), s8(0), type(_type), quiet(0) {$/;"	f	class:ez::ezOptionValidator
+ezOptionValidator	uscc/ezOptionParser.hpp	/^ezOptionValidator::ezOptionValidator(char _type, char _op, const short* list, int _size) : insensitive(0), op(_op), size(_size), s2(0), type(_type), quiet(0) {$/;"	f	class:ez::ezOptionValidator
+ezOptionValidator	uscc/ezOptionParser.hpp	/^ezOptionValidator::ezOptionValidator(char _type, char _op, const unsigned char* list, int _size) : insensitive(0), op(_op), size(_size), u1(0), type(_type), quiet(0) {$/;"	f	class:ez::ezOptionValidator
+ezOptionValidator	uscc/ezOptionParser.hpp	/^ezOptionValidator::ezOptionValidator(char _type, char _op, const unsigned int* list, int _size) : insensitive(0), op(_op), size(_size), u4(0), type(_type), quiet(0) {$/;"	f	class:ez::ezOptionValidator
+ezOptionValidator	uscc/ezOptionParser.hpp	/^ezOptionValidator::ezOptionValidator(char _type, char _op, const unsigned long long* list, int _size) : insensitive(0), op(_op), size(_size), u8(0), type(_type), quiet(0) {$/;"	f	class:ez::ezOptionValidator
+ezOptionValidator	uscc/ezOptionParser.hpp	/^ezOptionValidator::ezOptionValidator(char _type, char _op, const unsigned short* list, int _size) : insensitive(0), op(_op), size(_size), u2(0), type(_type), quiet(0) {$/;"	f	class:ez::ezOptionValidator
+ezOptionValidator	uscc/ezOptionParser.hpp	/^ezOptionValidator::ezOptionValidator(const char* _type, const char* _op, const char* _list, bool _insensitive) : insensitive(_insensitive), size(0), t(0), type(0), quiet(0) {$/;"	f	class:ez::ezOptionValidator
+f	uscc/ezOptionParser.hpp	/^    float *f;$/;"	m	union:ez::ezOptionValidator::__anon1
+file	tests/emit.py	/^	file = f.split(".")$/;"	v
+file	tests/expected.py	/^	file = f.split(".")$/;"	v
+firstArgs	uscc/ezOptionParser.hpp	/^  std::vector< std::string* > firstArgs;$/;"	m	class:ez::ezOptionParser
+flags	uscc/ezOptionParser.hpp	/^  std::vector< std::string* > flags;$/;"	m	class:ez::OptionGroup
+flex_int16_t	scan/FlexLexer.cpp	/^typedef int16_t flex_int16_t;$/;"	t	file:
+flex_int16_t	scan/FlexLexer.cpp	/^typedef short int flex_int16_t;$/;"	t	file:
+flex_int32_t	scan/FlexLexer.cpp	/^typedef int flex_int32_t;$/;"	t	file:
+flex_int32_t	scan/FlexLexer.cpp	/^typedef int32_t flex_int32_t;$/;"	t	file:
+flex_int8_t	scan/FlexLexer.cpp	/^typedef int8_t flex_int8_t;$/;"	t	file:
+flex_int8_t	scan/FlexLexer.cpp	/^typedef signed char flex_int8_t;$/;"	t	file:
+flex_uint16_t	scan/FlexLexer.cpp	/^typedef uint16_t flex_uint16_t;$/;"	t	file:
+flex_uint16_t	scan/FlexLexer.cpp	/^typedef unsigned short int flex_uint16_t;$/;"	t	file:
+flex_uint32_t	scan/FlexLexer.cpp	/^typedef uint32_t flex_uint32_t;$/;"	t	file:
+flex_uint32_t	scan/FlexLexer.cpp	/^typedef unsigned int flex_uint32_t;$/;"	t	file:
+flex_uint8_t	scan/FlexLexer.cpp	/^typedef uint8_t flex_uint8_t;$/;"	t	file:
+flex_uint8_t	scan/FlexLexer.cpp	/^typedef unsigned char flex_uint8_t; $/;"	t	file:
+footer	uscc/ezOptionParser.hpp	/^  std::string footer;$/;"	m	class:ez::ezOptionParser
+fromString	uscc/ezOptionParser.hpp	/^static T fromString(const char* s) {$/;"	f	namespace:ez
+fromString	uscc/ezOptionParser.hpp	/^static T fromString(const std::string* s) {$/;"	f	namespace:ez
+get	uscc/ezOptionParser.hpp	/^OptionGroup * ezOptionParser::get(const char * name) {$/;"	f	class:ez::ezOptionParser
+getAnalysisUsage	opt/ConstantBranch.cpp	/^void ConstantBranch::getAnalysisUsage(AnalysisUsage& Info) const$/;"	f	class:uscc::opt::ConstantBranch
+getAnalysisUsage	opt/ConstantOps.cpp	/^void ConstantOps::getAnalysisUsage(AnalysisUsage& Info) const$/;"	f	class:uscc::opt::ConstantOps
+getAnalysisUsage	opt/DeadBlocks.cpp	/^void DeadBlocks::getAnalysisUsage(AnalysisUsage& Info) const$/;"	f	class:uscc::opt::DeadBlocks
+getAnalysisUsage	opt/LICM.cpp	/^void LICM::getAnalysisUsage(AnalysisUsage &Info) const$/;"	f	class:uscc::opt::LICM
+getDouble	uscc/ezOptionParser.hpp	/^void OptionGroup::getDouble(double & out) {$/;"	f	class:ez::OptionGroup
+getDoubles	uscc/ezOptionParser.hpp	/^void OptionGroup::getDoubles(std::vector<double> & out) {$/;"	f	class:ez::OptionGroup
+getFloat	uscc/ezOptionParser.hpp	/^void OptionGroup::getFloat(float & out) {$/;"	f	class:ez::OptionGroup
+getFloats	uscc/ezOptionParser.hpp	/^void OptionGroup::getFloats(std::vector<float> & out) {$/;"	f	class:ez::OptionGroup
+getIdentifier	parse/Symbols.cpp	/^Identifier* SymbolTable::getIdentifier(const char* name)$/;"	f	class:SymbolTable
+getInt	uscc/ezOptionParser.hpp	/^void OptionGroup::getInt(int & out) {$/;"	f	class:ez::OptionGroup
+getInts	uscc/ezOptionParser.hpp	/^void OptionGroup::getInts(std::vector<int> & out) {$/;"	f	class:ez::OptionGroup
+getLong	uscc/ezOptionParser.hpp	/^void OptionGroup::getLong(long & out) {$/;"	f	class:ez::OptionGroup
+getLongLong	uscc/ezOptionParser.hpp	/^void OptionGroup::getLongLong(long long & out) {$/;"	f	class:ez::OptionGroup
+getLongs	uscc/ezOptionParser.hpp	/^void OptionGroup::getLongs(std::vector<long> & out) {$/;"	f	class:ez::OptionGroup
+getMultiDoubles	uscc/ezOptionParser.hpp	/^void OptionGroup::getMultiDoubles(std::vector< std::vector<double> >& out) {$/;"	f	class:ez::OptionGroup
+getMultiFloats	uscc/ezOptionParser.hpp	/^void OptionGroup::getMultiFloats(std::vector< std::vector<float> >& out) {$/;"	f	class:ez::OptionGroup
+getMultiInts	uscc/ezOptionParser.hpp	/^void OptionGroup::getMultiInts(std::vector< std::vector<int> >& out) {$/;"	f	class:ez::OptionGroup
+getMultiLongs	uscc/ezOptionParser.hpp	/^void OptionGroup::getMultiLongs(std::vector< std::vector<long> >& out) {$/;"	f	class:ez::OptionGroup
+getMultiStrings	uscc/ezOptionParser.hpp	/^void OptionGroup::getMultiStrings(std::vector< std::vector<std::string> >& out) {$/;"	f	class:ez::OptionGroup
+getMultiULongs	uscc/ezOptionParser.hpp	/^void OptionGroup::getMultiULongs(std::vector< std::vector<unsigned long> >& out) {$/;"	f	class:ez::OptionGroup
+getParent	parse/Symbols.h	/^		ScopeTable* getParent()$/;"	f	class:uscc::parse::SymbolTable::ScopeTable
+getString	uscc/ezOptionParser.hpp	/^void OptionGroup::getString(std::string & out) {$/;"	f	class:ez::OptionGroup
+getStrings	uscc/ezOptionParser.hpp	/^void OptionGroup::getStrings(std::vector<std::string>& out) {$/;"	f	class:ez::OptionGroup
+getULong	uscc/ezOptionParser.hpp	/^void OptionGroup::getULong(unsigned long & out) {$/;"	f	class:ez::OptionGroup
+getULongLong	uscc/ezOptionParser.hpp	/^void OptionGroup::getULongLong(unsigned long long & out) {$/;"	f	class:ez::OptionGroup
+getULongs	uscc/ezOptionParser.hpp	/^void OptionGroup::getULongs(std::vector<unsigned long> & out) {$/;"	f	class:ez::OptionGroup
+getUsage	uscc/ezOptionParser.hpp	/^void ezOptionParser::getUsage(std::string & usage, int width, Layout layout) {$/;"	f	class:ez::ezOptionParser
+getUsageDescriptions	uscc/ezOptionParser.hpp	/^void ezOptionParser::getUsageDescriptions(std::string & usage, int width, Layout layout) {$/;"	f	class:ez::ezOptionParser
+gotExpected	uscc/ezOptionParser.hpp	/^bool ezOptionParser::gotExpected(std::vector<std::string> & badOptions) {$/;"	f	class:ez::ezOptionParser
+gotRequired	uscc/ezOptionParser.hpp	/^bool ezOptionParser::gotRequired(std::vector<std::string> & badOptions) {$/;"	f	class:ez::ezOptionParser
+gotValid	uscc/ezOptionParser.hpp	/^bool ezOptionParser::gotValid(std::vector<std::string> & badOptions, std::vector<std::string> & badArgs) {$/;"	f	class:ez::ezOptionParser
+groupValidators	uscc/ezOptionParser.hpp	/^  std::map< int, int > groupValidators;$/;"	m	class:ez::ezOptionParser
+groups	uscc/ezOptionParser.hpp	/^  std::vector< OptionGroup* > groups;$/;"	m	class:ez::ezOptionParser
+help	uscc/ezOptionParser.hpp	/^  std::string help;$/;"	m	class:ez::OptionGroup
+id	uscc/ezOptionParser.hpp	/^  short id;$/;"	m	class:ez::ezOptionValidator
+importFile	uscc/ezOptionParser.hpp	/^bool ezOptionParser::importFile(const char * filename, char comment) {$/;"	f	class:ez::ezOptionParser
+insensitive	uscc/ezOptionParser.hpp	/^  bool insensitive;$/;"	m	class:ez::ezOptionValidator
+instance	uscc/ezOptionParser.hpp	/^  static ezOptionParserIDGenerator& instance () { static ezOptionParserIDGenerator Generator; return Generator; }$/;"	f	class:ez::ezOptionParserIDGenerator
+isRequired	uscc/ezOptionParser.hpp	/^  bool isRequired;$/;"	m	class:ez::OptionGroup
+isSet	uscc/ezOptionParser.hpp	/^  bool isSet;$/;"	m	class:ez::OptionGroup
+isSet	uscc/ezOptionParser.hpp	/^int ezOptionParser::isSet(const char * name) {$/;"	f	class:ez::ezOptionParser
+isSet	uscc/ezOptionParser.hpp	/^int ezOptionParser::isSet(std::string & name) {$/;"	f	class:ez::ezOptionParser
+isValid	uscc/ezOptionParser.hpp	/^bool ezOptionValidator::isValid(const std::string * valueAsString) {$/;"	f	class:ez::ezOptionValidator
+isdigit	uscc/ezOptionParser.hpp	/^static bool isdigit(const std::string & s, int i=0) {$/;"	f	namespace:ez
+isdigit	uscc/ezOptionParser.hpp	/^static bool isdigit(const std::string * s, int i=0) {$/;"	f	namespace:ez
+lastArgs	uscc/ezOptionParser.hpp	/^  std::vector< std::string* > lastArgs;$/;"	m	class:ez::ezOptionParser
+lli	tests/emit.py	/^lli = "..\/..\/bin\/lli"$/;"	v
+lli	tests/testEmit.py	/^lli = "..\/..\/bin\/lli"$/;"	v
+lli	tests/testOpt.py	/^lli = "..\/..\/bin\/lli"$/;"	v
+llvm	opt/SSABuilder.h	/^namespace llvm$/;"	n
+llvm	parse/ASTNodes.h	/^namespace llvm$/;"	n
+llvm	parse/Symbols.h	/^namespace llvm$/;"	n
+mASTStream	parse/Parse.h	/^	std::ostream* mASTStream;$/;"	m	class:uscc::parse::Parser
+mActualTok	parse/ParseExcept.h	/^	scan::Token::Tokens mActualTok;$/;"	m	class:uscc::parse::TokenMismatch
+mAddress	parse/Symbols.h	/^	llvm::Value* mAddress;$/;"	m	class:uscc::parse::Identifier
+mArgs	parse/ASTNodes.h	/^	std::list<std::shared_ptr<ASTExpr>> mArgs;$/;"	m	class:uscc::parse::ASTFuncExpr
+mArgs	parse/ASTNodes.h	/^	std::vector<std::shared_ptr<ASTArgDecl>> mArgs;$/;"	m	class:uscc::parse::ASTFunction
+mArray	parse/ASTNodes.h	/^	: mArray(array)$/;"	f	class:uscc::parse::ASTAddrOfArray
+mArray	parse/ASTNodes.h	/^	: mArray(array)$/;"	f	class:uscc::parse::ASTArrayExpr
+mArray	parse/ASTNodes.h	/^	std::shared_ptr<ASTArraySub> mArray;$/;"	m	class:uscc::parse::ASTAddrOfArray
+mArray	parse/ASTNodes.h	/^	std::shared_ptr<ASTArraySub> mArray;$/;"	m	class:uscc::parse::ASTArrayExpr
+mArray	parse/ASTNodes.h	/^	std::shared_ptr<ASTArraySub> mArray;$/;"	m	class:uscc::parse::ASTAssignArrayStmt
+mArrayCount	parse/Symbols.h	/^	size_t mArrayCount;$/;"	m	class:uscc::parse::Identifier
+mBlock	parse/Emitter.h	/^	llvm::BasicBlock* mBlock;$/;"	m	struct:uscc::parse::CodeContext
+mBody	parse/ASTNodes.h	/^	std::shared_ptr<ASTCompoundStmt> mBody;$/;"	m	class:uscc::parse::ASTFunction
+mChanged	opt/Passes.h	/^	bool mChanged;$/;"	m	struct:uscc::opt::LICM
+mCheckSemant	parse/Parse.h	/^	bool mCheckSemant;$/;"	m	class:uscc::parse::Parser
+mChildren	parse/Symbols.h	/^		std::list<ScopeTable*> mChildren;$/;"	m	class:uscc::parse::SymbolTable::ScopeTable
+mColNum	parse/Parse.h	/^		int mColNum;$/;"	m	struct:uscc::parse::Parser::Error
+mColNum	parse/ParseExcept.h	/^	unsigned int& mColNum;$/;"	m	class:uscc::parse::UnknownToken
+mColNumber	parse/Parse.h	/^	unsigned int mColNumber;$/;"	m	class:uscc::parse::Parser
+mContext	parse/Emitter.cpp	/^: mContext(parser.mStrings)$/;"	f
+mContext	parse/Emitter.h	/^	CodeContext mContext;$/;"	m	class:uscc::parse::Emitter
+mCurrLoop	opt/Passes.h	/^	llvm::Loop* mCurrLoop;$/;"	m	struct:uscc::opt::LICM
+mCurrReturnType	parse/Parse.h	/^	Type mCurrReturnType;$/;"	m	class:uscc::parse::Parser
+mCurrScope	parse/Symbols.cpp	/^: mCurrScope(nullptr)$/;"	f
+mCurrScope	parse/Symbols.h	/^	ScopeTable* mCurrScope;$/;"	m	class:uscc::parse::SymbolTable
+mCurrToken	parse/Parse.h	/^	uscc::scan::Token::Tokens mCurrToken;$/;"	m	class:uscc::parse::Parser
+mDecls	parse/ASTNodes.h	/^	std::list<std::shared_ptr<ASTDecl>> mDecls;$/;"	m	class:uscc::parse::ASTCompoundStmt
+mDomTree	opt/Passes.h	/^	llvm::DominatorTree* mDomTree;$/;"	m	struct:uscc::opt::LICM
+mElseStmt	parse/ASTNodes.h	/^	, mElseStmt(elseStmt)$/;"	f	class:uscc::parse::ASTIfStmt
+mElseStmt	parse/ASTNodes.h	/^	std::shared_ptr<ASTStmt> mElseStmt;$/;"	m	class:uscc::parse::ASTIfStmt
+mErrStream	parse/Parse.h	/^	std::ostream* mErrStream;$/;"	m	class:uscc::parse::Parser
+mErrors	parse/Parse.h	/^	std::list<std::shared_ptr<Error>> mErrors;$/;"	m	class:uscc::parse::Parser
+mExpectedTok	parse/ParseExcept.h	/^	scan::Token::Tokens mExpectedTok;$/;"	m	class:uscc::parse::TokenMismatch
+mExpr	parse/ASTNodes.h	/^	, mExpr(expr)$/;"	f	class:uscc::parse::ASTArraySub
+mExpr	parse/ASTNodes.h	/^	, mExpr(expr)$/;"	f	class:uscc::parse::ASTAssignArrayStmt
+mExpr	parse/ASTNodes.h	/^	, mExpr(expr)$/;"	f	class:uscc::parse::ASTAssignStmt
+mExpr	parse/ASTNodes.h	/^	, mExpr(expr)$/;"	f	class:uscc::parse::ASTDecl
+mExpr	parse/ASTNodes.h	/^	: mExpr(expr)$/;"	f	class:uscc::parse::ASTExprStmt
+mExpr	parse/ASTNodes.h	/^	: mExpr(expr)$/;"	f	class:uscc::parse::ASTNotExpr
+mExpr	parse/ASTNodes.h	/^	: mExpr(expr)$/;"	f	class:uscc::parse::ASTReturnStmt
+mExpr	parse/ASTNodes.h	/^	: mExpr(expr)$/;"	f	class:uscc::parse::ASTToCharExpr
+mExpr	parse/ASTNodes.h	/^	: mExpr(expr)$/;"	f	class:uscc::parse::ASTToIntExpr
+mExpr	parse/ASTNodes.h	/^	std::shared_ptr<ASTExpr> mExpr;$/;"	m	class:uscc::parse::ASTArraySub
+mExpr	parse/ASTNodes.h	/^	std::shared_ptr<ASTExpr> mExpr;$/;"	m	class:uscc::parse::ASTAssignArrayStmt
+mExpr	parse/ASTNodes.h	/^	std::shared_ptr<ASTExpr> mExpr;$/;"	m	class:uscc::parse::ASTAssignStmt
+mExpr	parse/ASTNodes.h	/^	std::shared_ptr<ASTExpr> mExpr;$/;"	m	class:uscc::parse::ASTDecl
+mExpr	parse/ASTNodes.h	/^	std::shared_ptr<ASTExpr> mExpr;$/;"	m	class:uscc::parse::ASTExprStmt
+mExpr	parse/ASTNodes.h	/^	std::shared_ptr<ASTExpr> mExpr;$/;"	m	class:uscc::parse::ASTIfStmt
+mExpr	parse/ASTNodes.h	/^	std::shared_ptr<ASTExpr> mExpr;$/;"	m	class:uscc::parse::ASTNotExpr
+mExpr	parse/ASTNodes.h	/^	std::shared_ptr<ASTExpr> mExpr;$/;"	m	class:uscc::parse::ASTReturnStmt
+mExpr	parse/ASTNodes.h	/^	std::shared_ptr<ASTExpr> mExpr;$/;"	m	class:uscc::parse::ASTToCharExpr
+mExpr	parse/ASTNodes.h	/^	std::shared_ptr<ASTExpr> mExpr;$/;"	m	class:uscc::parse::ASTToIntExpr
+mExpr	parse/ASTNodes.h	/^	std::shared_ptr<ASTExpr> mExpr;$/;"	m	class:uscc::parse::ASTWhileStmt
+mFileName	parse/Parse.h	/^	const char* mFileName;$/;"	m	class:uscc::parse::Parser
+mFileStream	parse/Parse.h	/^	std::ifstream mFileStream;$/;"	m	class:uscc::parse::Parser
+mFunc	parse/Emitter.h	/^	llvm::Function* mFunc;$/;"	m	struct:uscc::parse::CodeContext
+mFuncs	parse/ASTNodes.h	/^	std::list<std::shared_ptr<ASTFunction>> mFuncs;$/;"	m	class:uscc::parse::ASTProgram
+mFunctionNode	parse/Symbols.h	/^	std::shared_ptr<ASTFunction> mFunctionNode;$/;"	m	class:uscc::parse::Identifier
+mGlobal	parse/Emitter.h	/^	llvm::LLVMContext& mGlobal;$/;"	m	struct:uscc::parse::CodeContext
+mIdent	parse/ASTNodes.h	/^	: mIdent(ident)$/;"	f	class:uscc::parse::ASTArgDecl
+mIdent	parse/ASTNodes.h	/^	: mIdent(ident)$/;"	f	class:uscc::parse::ASTDecExpr
+mIdent	parse/ASTNodes.h	/^	: mIdent(ident)$/;"	f	class:uscc::parse::ASTFuncExpr
+mIdent	parse/ASTNodes.h	/^	: mIdent(ident)$/;"	f	class:uscc::parse::ASTIdentExpr
+mIdent	parse/ASTNodes.h	/^	: mIdent(ident)$/;"	f	class:uscc::parse::ASTIncExpr
+mIdent	parse/ASTNodes.h	/^	Identifier& mIdent;$/;"	m	class:uscc::parse::ASTArgDecl
+mIdent	parse/ASTNodes.h	/^	Identifier& mIdent;$/;"	m	class:uscc::parse::ASTArraySub
+mIdent	parse/ASTNodes.h	/^	Identifier& mIdent;$/;"	m	class:uscc::parse::ASTAssignStmt
+mIdent	parse/ASTNodes.h	/^	Identifier& mIdent;$/;"	m	class:uscc::parse::ASTDecExpr
+mIdent	parse/ASTNodes.h	/^	Identifier& mIdent;$/;"	m	class:uscc::parse::ASTDecl
+mIdent	parse/ASTNodes.h	/^	Identifier& mIdent;$/;"	m	class:uscc::parse::ASTFuncExpr
+mIdent	parse/ASTNodes.h	/^	Identifier& mIdent;$/;"	m	class:uscc::parse::ASTFunction
+mIdent	parse/ASTNodes.h	/^	Identifier& mIdent;$/;"	m	class:uscc::parse::ASTIdentExpr
+mIdent	parse/ASTNodes.h	/^	Identifier& mIdent;$/;"	m	class:uscc::parse::ASTIncExpr
+mIncompletePhis	opt/SSABuilder.h	/^	std::unordered_map<llvm::BasicBlock*, SubPHI*> mIncompletePhis;$/;"	m	class:uscc::opt::SSABuilder
+mLHS	parse/ASTNodes.h	/^	std::shared_ptr<ASTExpr> mLHS;$/;"	m	class:uscc::parse::ASTBinaryCmpOp
+mLHS	parse/ASTNodes.h	/^	std::shared_ptr<ASTExpr> mLHS;$/;"	m	class:uscc::parse::ASTBinaryMathOp
+mLHS	parse/ASTNodes.h	/^	std::shared_ptr<ASTExpr> mLHS;$/;"	m	class:uscc::parse::ASTLogicalAnd
+mLHS	parse/ASTNodes.h	/^	std::shared_ptr<ASTExpr> mLHS;$/;"	m	class:uscc::parse::ASTLogicalOr
+mLexer	parse/Parse.h	/^	FlexLexer* mLexer;$/;"	m	class:uscc::parse::Parser
+mLineNum	parse/Parse.h	/^		int mLineNum;$/;"	m	struct:uscc::parse::Parser::Error
+mLineNumber	parse/Parse.h	/^	unsigned int mLineNumber;$/;"	m	class:uscc::parse::Parser
+mLoopInfo	opt/Passes.h	/^	llvm::LoopInfo* mLoopInfo;$/;"	m	struct:uscc::opt::LICM
+mLoopStmt	parse/ASTNodes.h	/^	, mLoopStmt(loopStmt)$/;"	f	class:uscc::parse::ASTWhileStmt
+mLoopStmt	parse/ASTNodes.h	/^	std::shared_ptr<ASTStmt> mLoopStmt;$/;"	m	class:uscc::parse::ASTWhileStmt
+mModule	parse/Emitter.h	/^	llvm::Module* mModule;$/;"	m	struct:uscc::parse::CodeContext
+mMsg	parse/Parse.h	/^		std::string mMsg;$/;"	m	struct:uscc::parse::Parser::Error
+mMsg	parse/ParseExcept.h	/^	const char* mMsg;$/;"	m	class:uscc::parse::ParseExceptMsg
+mName	parse/Symbols.h	/^	std::string mName;$/;"	m	class:uscc::parse::Identifier
+mNeedPrintf	parse/Parse.h	/^	bool mNeedPrintf;$/;"	m	class:uscc::parse::Parser
+mOp	parse/ASTNodes.h	/^	: mOp(op)$/;"	f	class:uscc::parse::ASTBinaryCmpOp
+mOp	parse/ASTNodes.h	/^	: mOp(op)$/;"	f	class:uscc::parse::ASTBinaryMathOp
+mOp	parse/ASTNodes.h	/^	scan::Token::Tokens mOp;$/;"	m	class:uscc::parse::ASTBinaryCmpOp
+mOp	parse/ASTNodes.h	/^	scan::Token::Tokens mOp;$/;"	m	class:uscc::parse::ASTBinaryMathOp
+mOp	parse/ParseExcept.h	/^	scan::Token::Tokens mOp;$/;"	m	class:uscc::parse::OperandMissing
+mOutputSymbols	parse/Parse.h	/^	bool mOutputSymbols;$/;"	m	class:uscc::parse::Parser
+mParent	parse/Symbols.cpp	/^: mParent(parent)$/;"	f
+mParent	parse/Symbols.h	/^		ScopeTable* mParent;$/;"	m	class:uscc::parse::SymbolTable::ScopeTable
+mPrintfIdent	parse/Emitter.h	/^	Identifier* mPrintfIdent;$/;"	m	struct:uscc::parse::CodeContext
+mRHS	parse/ASTNodes.h	/^	std::shared_ptr<ASTExpr> mRHS;$/;"	m	class:uscc::parse::ASTBinaryCmpOp
+mRHS	parse/ASTNodes.h	/^	std::shared_ptr<ASTExpr> mRHS;$/;"	m	class:uscc::parse::ASTBinaryMathOp
+mRHS	parse/ASTNodes.h	/^	std::shared_ptr<ASTExpr> mRHS;$/;"	m	class:uscc::parse::ASTLogicalAnd
+mRHS	parse/ASTNodes.h	/^	std::shared_ptr<ASTExpr> mRHS;$/;"	m	class:uscc::parse::ASTLogicalOr
+mReturnType	parse/ASTNodes.h	/^	Type mReturnType;$/;"	m	class:uscc::parse::ASTFunction
+mRoot	parse/Parse.h	/^	std::shared_ptr<ASTProgram> mRoot;$/;"	m	class:uscc::parse::Parser
+mSSA	parse/Emitter.h	/^	opt::SSABuilder mSSA;$/;"	m	struct:uscc::parse::CodeContext
+mScopeTable	parse/ASTNodes.h	/^	, mScopeTable(scopeTable)$/;"	f	class:uscc::parse::ASTFunction
+mScopeTable	parse/ASTNodes.h	/^	SymbolTable::ScopeTable& mScopeTable;$/;"	m	class:uscc::parse::ASTFunction
+mSealedBlocks	opt/SSABuilder.h	/^	std::unordered_set<llvm::BasicBlock*> mSealedBlocks;$/;"	m	class:uscc::opt::SSABuilder
+mStmts	parse/ASTNodes.h	/^	std::list<std::shared_ptr<ASTStmt>> mStmts;$/;"	m	class:uscc::parse::ASTCompoundStmt
+mString	parse/ASTNodes.h	/^	ConstStr* mString;$/;"	m	class:uscc::parse::ASTStringExpr
+mStrings	parse/Emitter.h	/^	StringTable& mStrings;$/;"	m	struct:uscc::parse::CodeContext
+mStrings	parse/Parse.h	/^	StringTable mStrings;$/;"	m	class:uscc::parse::Parser
+mStrings	parse/Symbols.h	/^	std::unordered_map<std::string, ConstStr*> mStrings;$/;"	m	class:uscc::parse::StringTable
+mSymbols	parse/Parse.h	/^	SymbolTable mSymbols;$/;"	m	class:uscc::parse::Parser
+mSymbols	parse/Symbols.h	/^		std::unordered_map<std::string, Identifier*> mSymbols;$/;"	m	class:uscc::parse::SymbolTable::ScopeTable
+mText	parse/Symbols.h	/^	std::string mText;$/;"	m	class:uscc::parse::ConstStr
+mThenStmt	parse/ASTNodes.h	/^	std::shared_ptr<ASTStmt> mThenStmt;$/;"	m	class:uscc::parse::ASTIfStmt
+mToken	parse/ParseExcept.h	/^	const char* mToken;$/;"	m	class:uscc::parse::UnknownToken
+mTokenStr	parse/ParseExcept.h	/^	const char* mTokenStr;$/;"	m	class:uscc::parse::TokenMismatch
+mType	parse/ASTNodes.h	/^	: mType(Type::Void)$/;"	f	class:uscc::parse::ASTExpr
+mType	parse/ASTNodes.h	/^	Type mType;$/;"	m	class:uscc::parse::ASTExpr
+mType	parse/Symbols.h	/^	Type mType;$/;"	m	class:uscc::parse::Identifier
+mUnusedArray	parse/Parse.h	/^	std::shared_ptr<ASTArraySub> mUnusedArray;$/;"	m	class:uscc::parse::Parser
+mUnusedIdent	parse/Parse.h	/^	Identifier* mUnusedIdent;$/;"	m	class:uscc::parse::Parser
+mValue	parse/ASTNodes.h	/^	int mValue;$/;"	m	class:uscc::parse::ASTConstantExpr
+mValue	parse/Symbols.h	/^	llvm::Value* mValue;$/;"	m	class:uscc::parse::ConstStr
+mVarDefs	opt/SSABuilder.h	/^	std::unordered_map<llvm::BasicBlock*, SubMap*> mVarDefs;$/;"	m	class:uscc::opt::SSABuilder
+mZero	parse/Emitter.h	/^	llvm::Value* mZero;$/;"	m	struct:uscc::parse::CodeContext
+main	uscc/main.cpp	/^int main(int argc, const char * argv[])$/;"	f
+matchToken	parse/Parse.cpp	/^void Parser::matchToken(Token::Tokens desired)$/;"	f	class:Parser
+matchTokenSeq	parse/Parse.cpp	/^void Parser::matchTokenSeq(const std::initializer_list<Token::Tokens>& list)$/;"	f	class:Parser
+next	uscc/ezOptionParser.hpp	/^  short next () { return ++_id; }$/;"	f	class:ez::ezOptionParserIDGenerator
+noexcept	parse/ASTNodes.h	/^	Type getArgType(unsigned int argNum) const noexcept;$/;"	m	class:uscc::parse::ASTFunction
+noexcept	parse/ASTNodes.h	/^	bool checkArgType(unsigned int argNum, Type type) const noexcept;$/;"	m	class:uscc::parse::ASTFunction
+noexcept	parse/ASTNodes.h	/^	bool finalizeOp() noexcept;$/;"	m	class:uscc::parse::ASTBinaryCmpOp
+noexcept	parse/ASTNodes.h	/^	bool finalizeOp() noexcept;$/;"	m	class:uscc::parse::ASTBinaryMathOp
+noexcept	parse/ASTNodes.h	/^	bool finalizeOp() noexcept;$/;"	m	class:uscc::parse::ASTLogicalAnd
+noexcept	parse/ASTNodes.h	/^	bool finalizeOp() noexcept;$/;"	m	class:uscc::parse::ASTLogicalOr
+noexcept	parse/ASTNodes.h	/^	std::shared_ptr<ASTStmt> getLastStmt() noexcept;$/;"	m	class:uscc::parse::ASTCompoundStmt
+noexcept	parse/ASTNodes.h	/^	virtual llvm::Value* emitIR(CodeContext& ctx) noexcept = 0;$/;"	m	class:uscc::parse::ASTNode
+noexcept	parse/ASTNodes.h	/^	virtual void printNode(std::ostream& output, int depth = 0) const noexcept = 0;$/;"	m	class:uscc::parse::ASTNode
+noexcept	parse/ASTNodes.h	/^	void addArg(std::shared_ptr<ASTArgDecl> arg) noexcept;$/;"	m	class:uscc::parse::ASTFunction
+noexcept	parse/ASTNodes.h	/^	void addArg(std::shared_ptr<ASTExpr> arg) noexcept;$/;"	m	class:uscc::parse::ASTFuncExpr
+noexcept	parse/ASTNodes.h	/^	void addDecl(std::shared_ptr<ASTDecl> decl) noexcept;$/;"	m	class:uscc::parse::ASTCompoundStmt
+noexcept	parse/ASTNodes.h	/^	void addFunction(std::shared_ptr<ASTFunction> func) noexcept;$/;"	m	class:uscc::parse::ASTProgram
+noexcept	parse/ASTNodes.h	/^	void addStmt(std::shared_ptr<ASTStmt> stmt) noexcept;$/;"	m	class:uscc::parse::ASTCompoundStmt
+noexcept	parse/ASTNodes.h	/^	void setBody(std::shared_ptr<ASTCompoundStmt> body) noexcept;$/;"	m	class:uscc::parse::ASTFunction
+noexcept	parse/Emitter.h	/^	Emitter(Parser& parser) noexcept;$/;"	m	class:uscc::parse::Emitter
+noexcept	parse/Emitter.h	/^	bool verify() noexcept;$/;"	m	class:uscc::parse::Emitter
+noexcept	parse/Emitter.h	/^	bool writeAsm(const char* fileName) noexcept;$/;"	m	class:uscc::parse::Emitter
+noexcept	parse/Emitter.h	/^	void optimize() noexcept;$/;"	m	class:uscc::parse::Emitter
+noexcept	parse/Emitter.h	/^	void print() noexcept;$/;"	m	class:uscc::parse::Emitter
+noexcept	parse/Emitter.h	/^	void writeBitcode(const char* fileName) noexcept;$/;"	m	class:uscc::parse::Emitter
+noexcept	parse/Parse.h	/^						   int lineOverride = -1) noexcept;$/;"	m	class:uscc::parse::Parser
+noexcept	parse/Parse.h	/^	Identifier* getVariable(const char* name) noexcept;$/;"	m	class:uscc::parse::Parser
+noexcept	parse/Parse.h	/^	bool peekIsOneOf(const std::initializer_list<scan::Token::Tokens>& list) noexcept;$/;"	m	class:uscc::parse::Parser
+noexcept	parse/Parse.h	/^	const char* getTokenTxt() const noexcept;$/;"	m	class:uscc::parse::Parser
+noexcept	parse/Parse.h	/^	const char* getTypeText(Type type) const noexcept;$/;"	m	class:uscc::parse::Parser
+noexcept	parse/Parse.h	/^	std::shared_ptr<ASTExpr> charToInt(std::shared_ptr<ASTExpr> expr) noexcept;$/;"	m	class:uscc::parse::Parser
+noexcept	parse/Parse.h	/^	std::shared_ptr<ASTExpr> intToChar(std::shared_ptr<ASTExpr> expr) noexcept;$/;"	m	class:uscc::parse::Parser
+noexcept	parse/Parse.h	/^	void consumeUntil(const std::initializer_list<scan::Token::Tokens>& list) noexcept;$/;"	m	class:uscc::parse::Parser
+noexcept	parse/Parse.h	/^	void consumeUntil(scan::Token::Tokens desired) noexcept;$/;"	m	class:uscc::parse::Parser
+noexcept	parse/Parse.h	/^	void displayErrorMsg(const std::string& line, std::shared_ptr<Error> error) noexcept;$/;"	m	class:uscc::parse::Parser
+noexcept	parse/Parse.h	/^	void displayErrors() noexcept;$/;"	m	class:uscc::parse::Parser
+noexcept	parse/Parse.h	/^	void reportError(const ParseExcept& except) noexcept;$/;"	m	class:uscc::parse::Parser
+noexcept	parse/Parse.h	/^	void reportError(const std::string& msg) noexcept;$/;"	m	class:uscc::parse::Parser
+noexcept	parse/ParseExcept.h	/^	virtual void printException(std::ostream& output) const noexcept;$/;"	m	class:uscc::parse::ParseExcept
+noexcept	parse/Symbols.h	/^		Identifier* search(const char* name) noexcept;$/;"	m	class:uscc::parse::SymbolTable::ScopeTable
+noexcept	parse/Symbols.h	/^		Identifier* searchInScope(const char* name) noexcept;$/;"	m	class:uscc::parse::SymbolTable::ScopeTable
+noexcept	parse/Symbols.h	/^		ScopeTable(ScopeTable* parent) noexcept;$/;"	m	class:uscc::parse::SymbolTable::ScopeTable
+noexcept	parse/Symbols.h	/^		void print(std::ostream& output, int depth = 0) const noexcept;$/;"	m	class:uscc::parse::SymbolTable::ScopeTable
+noexcept	parse/Symbols.h	/^		~ScopeTable() noexcept;$/;"	m	class:uscc::parse::SymbolTable::ScopeTable
+noexcept	parse/Symbols.h	/^	ConstStr* getString(std::string& val) noexcept;$/;"	m	class:uscc::parse::StringTable
+noexcept	parse/Symbols.h	/^	StringTable() noexcept;$/;"	m	class:uscc::parse::StringTable
+noexcept	parse/Symbols.h	/^	SymbolTable() noexcept;$/;"	m	class:uscc::parse::SymbolTable
+noexcept	parse/Symbols.h	/^	bool isDeclaredInScope(const char* name) const noexcept;$/;"	m	class:uscc::parse::SymbolTable
+noexcept	parse/Symbols.h	/^	llvm::Type* llvmType(bool treatArrayAsPtr = true) noexcept;$/;"	m	class:uscc::parse::Identifier
+noexcept	parse/Symbols.h	/^	llvm::Value* readFrom(CodeContext& ctx) noexcept;$/;"	m	class:uscc::parse::Identifier
+noexcept	parse/Symbols.h	/^	void emitIR(CodeContext& ctx) noexcept;$/;"	m	class:uscc::parse::StringTable
+noexcept	parse/Symbols.h	/^	void print(std::ostream& output) const noexcept;$/;"	m	class:uscc::parse::SymbolTable
+noexcept	parse/Symbols.h	/^	void writeTo(CodeContext& ctx, llvm::Value* value) noexcept;$/;"	m	class:uscc::parse::Identifier
+noexcept	parse/Symbols.h	/^	~StringTable() noexcept;$/;"	m	class:uscc::parse::StringTable
+noexcept	parse/Symbols.h	/^	~SymbolTable() noexcept;$/;"	m	class:uscc::parse::SymbolTable
+op	uscc/ezOptionParser.hpp	/^  char op;$/;"	m	class:ez::ezOptionValidator
+operator =	parse/ASTNodes.h	/^	ASTNode& operator=(const ASTNode& rhs) { return *this; }$/;"	f	class:uscc::parse::ASTNode
+operator =	parse/Parse.h	/^	Parser& operator=(const Parser& rhs) { return *this; }$/;"	f	class:uscc::parse::Parser
+opt	opt/ConstantBranch.cpp	/^namespace opt$/;"	n	namespace:uscc	file:
+opt	opt/ConstantOps.cpp	/^namespace opt$/;"	n	namespace:uscc	file:
+opt	opt/DeadBlocks.cpp	/^namespace opt$/;"	n	namespace:uscc	file:
+opt	opt/LICM.cpp	/^namespace opt$/;"	n	namespace:uscc	file:
+opt	opt/Passes.cpp	/^namespace opt$/;"	n	namespace:uscc	file:
+opt	opt/Passes.h	/^namespace opt$/;"	n	namespace:uscc
+opt	opt/SSABuilder.h	/^namespace opt$/;"	n	namespace:uscc
+optionGroupIds	uscc/ezOptionParser.hpp	/^  std::map< std::string, int > optionGroupIds;$/;"	m	class:ez::ezOptionParser
+outfile	tests/emit.py	/^		outfile = open("expected\/" + file[0] + extension, "w")$/;"	v
+outfile	tests/expected.py	/^		outfile = open("expected\/" + file[0] + extension, "w")$/;"	v
+override	opt/Passes.h	/^	virtual bool runOnFunction(llvm::Function& F) override;$/;"	m	struct:uscc::opt::ConstantBranch
+override	opt/Passes.h	/^	virtual bool runOnFunction(llvm::Function& F) override;$/;"	m	struct:uscc::opt::ConstantOps
+override	opt/Passes.h	/^	virtual bool runOnFunction(llvm::Function& F) override;$/;"	m	struct:uscc::opt::DeadBlocks
+override	opt/Passes.h	/^	virtual bool runOnLoop(llvm::Loop* L, llvm::LPPassManager& LPM) override;$/;"	m	struct:uscc::opt::LICM
+override	opt/Passes.h	/^	virtual void getAnalysisUsage(llvm::AnalysisUsage& Info) const override;$/;"	m	struct:uscc::opt::ConstantBranch
+override	opt/Passes.h	/^	virtual void getAnalysisUsage(llvm::AnalysisUsage& Info) const override;$/;"	m	struct:uscc::opt::ConstantOps
+override	opt/Passes.h	/^	virtual void getAnalysisUsage(llvm::AnalysisUsage& Info) const override;$/;"	m	struct:uscc::opt::DeadBlocks
+override	opt/Passes.h	/^	virtual void getAnalysisUsage(llvm::AnalysisUsage& Info) const override;$/;"	m	struct:uscc::opt::LICM
+override	parse/ParseExcept.h	/^	virtual void printException(std::ostream& output) const noexcept override;$/;"	m	class:uscc::parse::OperandMissing
+override	parse/ParseExcept.h	/^	virtual void printException(std::ostream& output) const noexcept override;$/;"	m	class:uscc::parse::ParseExceptMsg
+override	parse/ParseExcept.h	/^	virtual void printException(std::ostream& output) const noexcept override;$/;"	m	class:uscc::parse::TokenMismatch
+override	parse/ParseExcept.h	/^	virtual void printException(std::ostream& output) const noexcept override;$/;"	m	class:uscc::parse::UnknownToken
+overview	uscc/ezOptionParser.hpp	/^  std::string overview;$/;"	m	class:ez::ezOptionParser
+parse	opt/SSABuilder.h	/^namespace parse$/;"	n	namespace:uscc
+parse	parse/ASTNodes.h	/^namespace parse$/;"	n	namespace:uscc
+parse	parse/Emitter.h	/^namespace parse$/;"	n	namespace:uscc
+parse	parse/Parse.h	/^namespace parse$/;"	n	namespace:uscc
+parse	parse/ParseExcept.h	/^namespace parse$/;"	n	namespace:uscc
+parse	parse/Symbols.h	/^namespace parse$/;"	n	namespace:uscc
+parse	parse/Types.h	/^namespace parse$/;"	n	namespace:uscc
+parse	uscc/ezOptionParser.hpp	/^void ezOptionParser::parse(int argc, const char * argv[]) {$/;"	f	class:ez::ezOptionParser
+parseAddrOfArrayFactor	parse/ParseExpr.cpp	/^shared_ptr<ASTExpr> Parser::parseAddrOfArrayFactor()$/;"	f	class:Parser
+parseAndTerm	parse/ParseExpr.cpp	/^shared_ptr<ASTExpr> Parser::parseAndTerm()$/;"	f	class:Parser
+parseAndTermPrime	parse/ParseExpr.cpp	/^shared_ptr<ASTLogicalAnd> Parser::parseAndTermPrime(shared_ptr<ASTExpr> lhs)$/;"	f	class:Parser
+parseArgDecl	parse/Parse.cpp	/^shared_ptr<ASTArgDecl> Parser::parseArgDecl()$/;"	f	class:Parser
+parseAssignStmt	parse/ParseStmt.cpp	/^shared_ptr<ASTStmt> Parser::parseAssignStmt()$/;"	f	class:Parser
+parseCompoundStmt	parse/ParseStmt.cpp	/^shared_ptr<ASTCompoundStmt> Parser::parseCompoundStmt(bool isFuncBody)$/;"	f	class:Parser
+parseConstantFactor	parse/ParseExpr.cpp	/^shared_ptr<ASTConstantExpr> Parser::parseConstantFactor()$/;"	f	class:Parser
+parseDecFactor	parse/ParseExpr.cpp	/^shared_ptr<ASTExpr> Parser::parseDecFactor()$/;"	f	class:Parser
+parseDecl	parse/ParseStmt.cpp	/^shared_ptr<ASTDecl> Parser::parseDecl()$/;"	f	class:Parser
+parseExpr	parse/ParseExpr.cpp	/^shared_ptr<ASTExpr> Parser::parseExpr()$/;"	f	class:Parser
+parseExprPrime	parse/ParseExpr.cpp	/^shared_ptr<ASTLogicalOr> Parser::parseExprPrime(shared_ptr<ASTExpr> lhs)$/;"	f	class:Parser
+parseExprStmt	parse/ParseStmt.cpp	/^shared_ptr<ASTExprStmt> Parser::parseExprStmt()$/;"	f	class:Parser
+parseFactor	parse/ParseExpr.cpp	/^shared_ptr<ASTExpr> Parser::parseFactor()$/;"	f	class:Parser
+parseFunction	parse/Parse.cpp	/^shared_ptr<ASTFunction> Parser::parseFunction()$/;"	f	class:Parser
+parseIdentFactor	parse/ParseExpr.cpp	/^shared_ptr<ASTExpr> Parser::parseIdentFactor()$/;"	f	class:Parser
+parseIfStmt	parse/ParseStmt.cpp	/^shared_ptr<ASTIfStmt> Parser::parseIfStmt()$/;"	f	class:Parser
+parseIncFactor	parse/ParseExpr.cpp	/^shared_ptr<ASTExpr> Parser::parseIncFactor()$/;"	f	class:Parser
+parseIndex	uscc/ezOptionParser.hpp	/^  std::vector<int> parseIndex;$/;"	m	class:ez::OptionGroup
+parseNullStmt	parse/ParseStmt.cpp	/^shared_ptr<ASTNullStmt> Parser::parseNullStmt()$/;"	f	class:Parser
+parseNumExpr	parse/ParseExpr.cpp	/^shared_ptr<ASTExpr> Parser::parseNumExpr()$/;"	f	class:Parser
+parseNumExprPrime	parse/ParseExpr.cpp	/^shared_ptr<ASTBinaryMathOp> Parser::parseNumExprPrime(shared_ptr<ASTExpr> lhs)$/;"	f	class:Parser
+parseParenFactor	parse/ParseExpr.cpp	/^shared_ptr<ASTExpr> Parser::parseParenFactor()$/;"	f	class:Parser
+parseProgram	parse/Parse.cpp	/^shared_ptr<ASTProgram> Parser::parseProgram()$/;"	f	class:Parser
+parseRelExpr	parse/ParseExpr.cpp	/^shared_ptr<ASTExpr> Parser::parseRelExpr()$/;"	f	class:Parser
+parseRelExprPrime	parse/ParseExpr.cpp	/^shared_ptr<ASTBinaryCmpOp> Parser::parseRelExprPrime(shared_ptr<ASTExpr> lhs)$/;"	f	class:Parser
+parseReturnStmt	parse/ParseStmt.cpp	/^shared_ptr<ASTReturnStmt> Parser::parseReturnStmt()$/;"	f	class:Parser
+parseStmt	parse/ParseStmt.cpp	/^shared_ptr<ASTStmt> Parser::parseStmt()$/;"	f	class:Parser
+parseStringFactor	parse/ParseExpr.cpp	/^shared_ptr<ASTStringExpr> Parser::parseStringFactor()$/;"	f	class:Parser
+parseTerm	parse/ParseExpr.cpp	/^shared_ptr<ASTExpr> Parser::parseTerm()$/;"	f	class:Parser
+parseTermPrime	parse/ParseExpr.cpp	/^shared_ptr<ASTBinaryMathOp> Parser::parseTermPrime(shared_ptr<ASTExpr> lhs)$/;"	f	class:Parser
+parseValue	parse/ParseExpr.cpp	/^shared_ptr<ASTExpr> Parser::parseValue()$/;"	f	class:Parser
+parseWhileStmt	parse/ParseStmt.cpp	/^shared_ptr<ASTWhileStmt> Parser::parseWhileStmt()$/;"	f	class:Parser
+peekAndConsume	parse/Parse.cpp	/^bool Parser::peekAndConsume(Token::Tokens desired)$/;"	f	class:Parser
+prettyPrint	uscc/ezOptionParser.hpp	/^void ezOptionParser::prettyPrint(std::string & out) {$/;"	f	class:ez::ezOptionParser
+print	uscc/ezOptionParser.hpp	/^void ezOptionValidator::print() {$/;"	f	class:ez::ezOptionValidator
+quiet	uscc/ezOptionParser.hpp	/^  bool quiet;$/;"	m	class:ez::ezOptionValidator
+readVariable	opt/SSABuilder.cpp	/^Value* SSABuilder::readVariable(Identifier* var, BasicBlock* block)$/;"	f	class:SSABuilder
+readVariableRecursive	opt/SSABuilder.cpp	/^Value* SSABuilder::readVariableRecursive(Identifier* var, BasicBlock* block)$/;"	f	class:SSABuilder
+registerOptPasses	opt/Passes.cpp	/^void registerOptPasses(legacy::PassManager& pm)$/;"	f	namespace:uscc::opt
+reset	opt/SSABuilder.cpp	/^void SSABuilder::reset()$/;"	f	class:SSABuilder
+reset	uscc/ezOptionParser.hpp	/^void ezOptionParser::reset() {$/;"	f	class:ez::ezOptionParser
+reset	uscc/ezOptionParser.hpp	/^void ezOptionValidator::reset() {$/;"	f	class:ez::ezOptionValidator
+resetArgs	uscc/ezOptionParser.hpp	/^void ezOptionParser::resetArgs() {$/;"	f	class:ez::ezOptionParser
+runOnFunction	opt/ConstantBranch.cpp	/^bool ConstantBranch::runOnFunction(Function& F)$/;"	f	class:uscc::opt::ConstantBranch
+runOnFunction	opt/ConstantOps.cpp	/^bool ConstantOps::runOnFunction(Function& F) {$/;"	f	class:uscc::opt::ConstantOps
+runOnFunction	opt/DeadBlocks.cpp	/^bool DeadBlocks::runOnFunction(Function& F)$/;"	f	class:uscc::opt::DeadBlocks
+runOnLoop	opt/LICM.cpp	/^bool LICM::runOnLoop(llvm::Loop *L, llvm::LPPassManager &LPM)$/;"	f	class:uscc::opt::LICM
+s1	uscc/ezOptionParser.hpp	/^    char *s1;$/;"	m	union:ez::ezOptionValidator::__anon1
+s2	uscc/ezOptionParser.hpp	/^    short *s2;$/;"	m	union:ez::ezOptionValidator::__anon1
+s4	uscc/ezOptionParser.hpp	/^    int *s4;$/;"	m	union:ez::ezOptionValidator::__anon1
+s8	uscc/ezOptionParser.hpp	/^    long long *s8;$/;"	m	union:ez::ezOptionValidator::__anon1
+scan	scan/Tokens.h	/^namespace scan$/;"	n	namespace:uscc
+sealBlock	opt/SSABuilder.cpp	/^void SSABuilder::sealBlock(llvm::BasicBlock* block)$/;"	f	class:SSABuilder
+setUp	tests/testEmit.py	/^	def setUp(self):$/;"	m	class:EmitTests
+setUp	tests/testOpt.py	/^	def setUp(self):$/;"	m	class:EmitTests
+setUp	tests/testParse.py	/^	def setUp(self):$/;"	m	class:ParseTests
+setUp	tests/testSemant.py	/^	def setUp(self):$/;"	m	class:SemantTests
+size	uscc/ezOptionParser.hpp	/^  int size;$/;"	m	class:ez::ezOptionValidator
+switch_streams	scan/FlexLexer.cpp	/^void yyFlexLexer::switch_streams( std::istream& new_in, std::ostream& new_out )$/;"	f	class:yyFlexLexer
+switch_streams	scan/FlexLexer.cpp	/^void yyFlexLexer::switch_streams( std::istream* new_in, std::ostream* new_out )$/;"	f	class:yyFlexLexer
+syntax	uscc/ezOptionParser.hpp	/^  std::string syntax;$/;"	m	class:ez::ezOptionParser
+t	uscc/ezOptionParser.hpp	/^    std::string** t;$/;"	m	union:ez::ezOptionValidator::__anon1
+test_AST_001	tests/testParse.py	/^	def test_AST_001(self):$/;"	m	class:ParseTests
+test_AST_002	tests/testParse.py	/^	def test_AST_002(self):$/;"	m	class:ParseTests
+test_AST_003	tests/testParse.py	/^	def test_AST_003(self):$/;"	m	class:ParseTests
+test_AST_004	tests/testParse.py	/^	def test_AST_004(self):$/;"	m	class:ParseTests
+test_AST_005	tests/testParse.py	/^	def test_AST_005(self):$/;"	m	class:ParseTests
+test_AST_006	tests/testParse.py	/^	def test_AST_006(self):$/;"	m	class:ParseTests
+test_AST_007	tests/testParse.py	/^	def test_AST_007(self):$/;"	m	class:ParseTests
+test_AST_008	tests/testParse.py	/^	def test_AST_008(self):$/;"	m	class:ParseTests
+test_AST_009	tests/testParse.py	/^	def test_AST_009(self):$/;"	m	class:ParseTests
+test_AST_010	tests/testParse.py	/^	def test_AST_010(self):$/;"	m	class:ParseTests
+test_AST_011	tests/testParse.py	/^	def test_AST_011(self):$/;"	m	class:ParseTests
+test_AST_012	tests/testParse.py	/^	def test_AST_012(self):$/;"	m	class:ParseTests
+test_AST_013	tests/testParse.py	/^	def test_AST_013(self):$/;"	m	class:ParseTests
+test_AST_014	tests/testParse.py	/^	def test_AST_014(self):$/;"	m	class:ParseTests
+test_AST_015	tests/testParse.py	/^	def test_AST_015(self):$/;"	m	class:ParseTests
+test_AST_016	tests/testParse.py	/^	def test_AST_016(self):$/;"	m	class:ParseTests
+test_AST_017	tests/testParse.py	/^	def test_AST_017(self):$/;"	m	class:ParseTests
+test_AST_018	tests/testParse.py	/^	def test_AST_018(self):$/;"	m	class:ParseTests
+test_AST_019	tests/testParse.py	/^	def test_AST_019(self):$/;"	m	class:ParseTests
+test_AST_quicksort	tests/testParse.py	/^	def test_AST_quicksort(self):$/;"	m	class:ParseTests
+test_Emit_015	tests/testEmit.py	/^	def test_Emit_015(self):$/;"	m	class:EmitTests
+test_Emit_015	tests/testOpt.py	/^	def test_Emit_015(self):$/;"	m	class:EmitTests
+test_Emit_016	tests/testEmit.py	/^	def test_Emit_016(self):$/;"	m	class:EmitTests
+test_Emit_016	tests/testOpt.py	/^	def test_Emit_016(self):$/;"	m	class:EmitTests
+test_Emit_emit02	tests/testEmit.py	/^	def test_Emit_emit02(self):$/;"	m	class:EmitTests
+test_Emit_emit02	tests/testOpt.py	/^	def test_Emit_emit02(self):$/;"	m	class:EmitTests
+test_Emit_emit03	tests/testEmit.py	/^	def test_Emit_emit03(self):$/;"	m	class:EmitTests
+test_Emit_emit03	tests/testOpt.py	/^	def test_Emit_emit03(self):$/;"	m	class:EmitTests
+test_Emit_emit04	tests/testEmit.py	/^	def test_Emit_emit04(self):$/;"	m	class:EmitTests
+test_Emit_emit04	tests/testOpt.py	/^	def test_Emit_emit04(self):$/;"	m	class:EmitTests
+test_Emit_emit05	tests/testEmit.py	/^	def test_Emit_emit05(self):$/;"	m	class:EmitTests
+test_Emit_emit05	tests/testOpt.py	/^	def test_Emit_emit05(self):$/;"	m	class:EmitTests
+test_Emit_emit06	tests/testEmit.py	/^	def test_Emit_emit06(self):$/;"	m	class:EmitTests
+test_Emit_emit06	tests/testOpt.py	/^	def test_Emit_emit06(self):$/;"	m	class:EmitTests
+test_Emit_emit07	tests/testEmit.py	/^	def test_Emit_emit07(self):$/;"	m	class:EmitTests
+test_Emit_emit07	tests/testOpt.py	/^	def test_Emit_emit07(self):$/;"	m	class:EmitTests
+test_Emit_emit08	tests/testEmit.py	/^	def test_Emit_emit08(self):$/;"	m	class:EmitTests
+test_Emit_emit08	tests/testOpt.py	/^	def test_Emit_emit08(self):$/;"	m	class:EmitTests
+test_Emit_emit09	tests/testEmit.py	/^	def test_Emit_emit09(self):$/;"	m	class:EmitTests
+test_Emit_emit09	tests/testOpt.py	/^	def test_Emit_emit09(self):$/;"	m	class:EmitTests
+test_Emit_emit10	tests/testEmit.py	/^	def test_Emit_emit10(self):$/;"	m	class:EmitTests
+test_Emit_emit10	tests/testOpt.py	/^	def test_Emit_emit10(self):$/;"	m	class:EmitTests
+test_Emit_emit11	tests/testEmit.py	/^	def test_Emit_emit11(self):$/;"	m	class:EmitTests
+test_Emit_emit11	tests/testOpt.py	/^	def test_Emit_emit11(self):$/;"	m	class:EmitTests
+test_Emit_emit12	tests/testEmit.py	/^	def test_Emit_emit12(self):$/;"	m	class:EmitTests
+test_Emit_emit12	tests/testOpt.py	/^	def test_Emit_emit12(self):$/;"	m	class:EmitTests
+test_Emit_opt01	tests/testEmit.py	/^	def test_Emit_opt01(self):$/;"	m	class:EmitTests
+test_Emit_opt01	tests/testOpt.py	/^	def test_Emit_opt01(self):$/;"	m	class:EmitTests
+test_Emit_opt02	tests/testEmit.py	/^	def test_Emit_opt02(self):$/;"	m	class:EmitTests
+test_Emit_opt02	tests/testOpt.py	/^	def test_Emit_opt02(self):$/;"	m	class:EmitTests
+test_Emit_opt03	tests/testEmit.py	/^	def test_Emit_opt03(self):$/;"	m	class:EmitTests
+test_Emit_opt03	tests/testOpt.py	/^	def test_Emit_opt03(self):$/;"	m	class:EmitTests
+test_Emit_opt04	tests/testEmit.py	/^	def test_Emit_opt04(self):$/;"	m	class:EmitTests
+test_Emit_opt04	tests/testOpt.py	/^	def test_Emit_opt04(self):$/;"	m	class:EmitTests
+test_Emit_opt05	tests/testEmit.py	/^	def test_Emit_opt05(self):$/;"	m	class:EmitTests
+test_Emit_opt05	tests/testOpt.py	/^	def test_Emit_opt05(self):$/;"	m	class:EmitTests
+test_Emit_opt06	tests/testEmit.py	/^	def test_Emit_opt06(self):$/;"	m	class:EmitTests
+test_Emit_opt06	tests/testOpt.py	/^	def test_Emit_opt06(self):$/;"	m	class:EmitTests
+test_Emit_opt07	tests/testEmit.py	/^	def test_Emit_opt07(self):$/;"	m	class:EmitTests
+test_Emit_opt07	tests/testOpt.py	/^	def test_Emit_opt07(self):$/;"	m	class:EmitTests
+test_Emit_quicksort	tests/testEmit.py	/^	def test_Emit_quicksort(self):$/;"	m	class:EmitTests
+test_Emit_quicksort	tests/testOpt.py	/^	def test_Emit_quicksort(self):$/;"	m	class:EmitTests
+test_Err_parse01	tests/testParse.py	/^	def test_Err_parse01(self):$/;"	m	class:ParseTests
+test_Err_parse02	tests/testParse.py	/^	def test_Err_parse02(self):$/;"	m	class:ParseTests
+test_Err_parse03	tests/testParse.py	/^	def test_Err_parse03(self):$/;"	m	class:ParseTests
+test_Err_parse04	tests/testParse.py	/^	def test_Err_parse04(self):$/;"	m	class:ParseTests
+test_Err_parse05	tests/testParse.py	/^	def test_Err_parse05(self):$/;"	m	class:ParseTests
+test_Err_parse06	tests/testParse.py	/^	def test_Err_parse06(self):$/;"	m	class:ParseTests
+test_SemErr_002	tests/testSemant.py	/^	def test_SemErr_002(self):$/;"	m	class:SemantTests
+test_SemErr_003	tests/testSemant.py	/^	def test_SemErr_003(self):$/;"	m	class:SemantTests
+test_SemErr_004	tests/testSemant.py	/^	def test_SemErr_004(self):$/;"	m	class:SemantTests
+test_SemErr_005	tests/testSemant.py	/^	def test_SemErr_005(self):$/;"	m	class:SemantTests
+test_SemErr_008	tests/testSemant.py	/^	def test_SemErr_008(self):$/;"	m	class:SemantTests
+test_SemErr_009	tests/testSemant.py	/^	def test_SemErr_009(self):$/;"	m	class:SemantTests
+test_SemErr_010	tests/testSemant.py	/^	def test_SemErr_010(self):$/;"	m	class:SemantTests
+test_SemErr_011	tests/testSemant.py	/^	def test_SemErr_011(self):$/;"	m	class:SemantTests
+test_SemErr_012	tests/testSemant.py	/^	def test_SemErr_012(self):$/;"	m	class:SemantTests
+test_SemErr_013	tests/testSemant.py	/^	def test_SemErr_013(self):$/;"	m	class:SemantTests
+test_SemErr_014	tests/testSemant.py	/^	def test_SemErr_014(self):$/;"	m	class:SemantTests
+test_SemErr_015	tests/testSemant.py	/^	def test_SemErr_015(self):$/;"	m	class:SemantTests
+test_SemErr_semant01e	tests/testSemant.py	/^	def test_SemErr_semant01e(self):$/;"	m	class:SemantTests
+test_SemErr_semant02e	tests/testSemant.py	/^	def test_SemErr_semant02e(self):$/;"	m	class:SemantTests
+test_SemErr_semant03e	tests/testSemant.py	/^	def test_SemErr_semant03e(self):$/;"	m	class:SemantTests
+test_SemErr_semant04e	tests/testSemant.py	/^	def test_SemErr_semant04e(self):$/;"	m	class:SemantTests
+test_SemErr_semant05e	tests/testSemant.py	/^	def test_SemErr_semant05e(self):$/;"	m	class:SemantTests
+test_SemErr_semant06e	tests/testSemant.py	/^	def test_SemErr_semant06e(self):$/;"	m	class:SemantTests
+test_SemErr_semant07e	tests/testSemant.py	/^	def test_SemErr_semant07e(self):$/;"	m	class:SemantTests
+test_SemErr_semant08e	tests/testSemant.py	/^	def test_SemErr_semant08e(self):$/;"	m	class:SemantTests
+test_SemErr_semant09e	tests/testSemant.py	/^	def test_SemErr_semant09e(self):$/;"	m	class:SemantTests
+test_SemErr_semant10e	tests/testSemant.py	/^	def test_SemErr_semant10e(self):$/;"	m	class:SemantTests
+test_SemErr_semant11e	tests/testSemant.py	/^	def test_SemErr_semant11e(self):$/;"	m	class:SemantTests
+test_SemErr_semant12e	tests/testSemant.py	/^	def test_SemErr_semant12e(self):$/;"	m	class:SemantTests
+test_Sem_001	tests/testSemant.py	/^	def test_Sem_001(self):$/;"	m	class:SemantTests
+test_Sem_006	tests/testSemant.py	/^	def test_Sem_006(self):$/;"	m	class:SemantTests
+test_Sem_007	tests/testSemant.py	/^	def test_Sem_007(self):$/;"	m	class:SemantTests
+test_Sem_015	tests/testSemant.py	/^	def test_Sem_015(self):$/;"	m	class:SemantTests
+test_Sem_016	tests/testSemant.py	/^	def test_Sem_016(self):$/;"	m	class:SemantTests
+test_Sem_017	tests/testSemant.py	/^	def test_Sem_017(self):$/;"	m	class:SemantTests
+test_Sem_018	tests/testSemant.py	/^	def test_Sem_018(self):$/;"	m	class:SemantTests
+test_Sem_emit01	tests/testSemant.py	/^	def test_Sem_emit01(self):$/;"	m	class:SemantTests
+test_Sem_emit02	tests/testSemant.py	/^	def test_Sem_emit02(self):$/;"	m	class:SemantTests
+test_Sem_emit03	tests/testSemant.py	/^	def test_Sem_emit03(self):$/;"	m	class:SemantTests
+test_Sem_emit04	tests/testSemant.py	/^	def test_Sem_emit04(self):$/;"	m	class:SemantTests
+test_Sem_emit05	tests/testSemant.py	/^	def test_Sem_emit05(self):$/;"	m	class:SemantTests
+test_Sem_emit06	tests/testSemant.py	/^	def test_Sem_emit06(self):$/;"	m	class:SemantTests
+test_Sem_emit07	tests/testSemant.py	/^	def test_Sem_emit07(self):$/;"	m	class:SemantTests
+test_Sem_emit08	tests/testSemant.py	/^	def test_Sem_emit08(self):$/;"	m	class:SemantTests
+test_Sem_emit09	tests/testSemant.py	/^	def test_Sem_emit09(self):$/;"	m	class:SemantTests
+test_Sem_emit10	tests/testParse.py	/^	def test_Sem_emit10(self):$/;"	m	class:ParseTests
+test_Sem_emit10	tests/testSemant.py	/^	def test_Sem_emit10(self):$/;"	m	class:SemantTests
+test_Sem_emit11	tests/testSemant.py	/^	def test_Sem_emit11(self):$/;"	m	class:SemantTests
+test_Sem_emit12	tests/testSemant.py	/^	def test_Sem_emit12(self):$/;"	m	class:SemantTests
+test_Sem_quicksort	tests/testSemant.py	/^	def test_Sem_quicksort(self):$/;"	m	class:SemantTests
+test_Sem_semant01	tests/testSemant.py	/^	def test_Sem_semant01(self):$/;"	m	class:SemantTests
+test_Sem_semant02	tests/testSemant.py	/^	def test_Sem_semant02(self):$/;"	m	class:SemantTests
+tryRemoveTrivialPhi	opt/SSABuilder.cpp	/^Value* SSABuilder::tryRemoveTrivialPhi(llvm::PHINode* phi)$/;"	f	class:SSABuilder
+type	uscc/ezOptionParser.hpp	/^  char type;$/;"	m	class:ez::ezOptionValidator
+u1	uscc/ezOptionParser.hpp	/^    unsigned char *u1;$/;"	m	union:ez::ezOptionValidator::__anon1
+u2	uscc/ezOptionParser.hpp	/^    unsigned short *u2;$/;"	m	union:ez::ezOptionValidator::__anon1
+u4	uscc/ezOptionParser.hpp	/^    unsigned int *u4;$/;"	m	union:ez::ezOptionValidator::__anon1
+u8	uscc/ezOptionParser.hpp	/^    unsigned long long *u8;$/;"	m	union:ez::ezOptionValidator::__anon1
+unknownArgs	uscc/ezOptionParser.hpp	/^  std::vector< std::string* > unknownArgs;$/;"	m	class:ez::ezOptionParser
+unput	scan/FlexLexer.cpp	190;"	d	file:
+uscc	opt/ConstantBranch.cpp	/^namespace uscc$/;"	n	file:
+uscc	opt/ConstantOps.cpp	/^namespace uscc$/;"	n	file:
+uscc	opt/DeadBlocks.cpp	/^namespace uscc$/;"	n	file:
+uscc	opt/LICM.cpp	/^namespace uscc$/;"	n	file:
+uscc	opt/Passes.cpp	/^namespace uscc$/;"	n	file:
+uscc	opt/Passes.h	/^namespace uscc$/;"	n
+uscc	opt/SSABuilder.h	/^namespace uscc$/;"	n
+uscc	parse/ASTNodes.h	/^namespace uscc$/;"	n
+uscc	parse/Emitter.h	/^namespace uscc$/;"	n
+uscc	parse/Parse.h	/^namespace uscc$/;"	n
+uscc	parse/ParseExcept.h	/^namespace uscc$/;"	n
+uscc	parse/Symbols.h	/^namespace uscc$/;"	n
+uscc	parse/Types.h	/^namespace uscc$/;"	n
+uscc	scan/Tokens.h	/^namespace uscc$/;"	n
+uscc	tests/emit.py	/^uscc = "..\/bin\/uscc"$/;"	v
+uscc	tests/expected.py	/^uscc = "..\/bin\/uscc"$/;"	v
+uscc	tests/testEmit.py	/^uscc = "..\/bin\/uscc"$/;"	v
+uscc	tests/testOpt.py	/^uscc = "..\/bin\/uscc"$/;"	v
+uscc	tests/testParse.py	/^uscc = "..\/bin\/uscc"$/;"	v
+uscc	tests/testSemant.py	/^uscc = "..\/bin\/uscc"$/;"	v
+validators	uscc/ezOptionParser.hpp	/^  ValidatorMap validators;$/;"	m	class:ez::ezOptionParser
+writeVariable	opt/SSABuilder.cpp	/^void SSABuilder::writeVariable(Identifier* var, BasicBlock* block, Value* value)$/;"	f	class:SSABuilder
+yyFlexLexer	scan/FlexLexer.cpp	/^yyFlexLexer::yyFlexLexer( std::istream& arg_yyin, std::ostream& arg_yyout ):$/;"	f	class:yyFlexLexer
+yyFlexLexer	scan/FlexLexer.cpp	/^yyFlexLexer::yyFlexLexer( std::istream* arg_yyin, std::ostream* arg_yyout ):$/;"	f	class:yyFlexLexer
+yyFlexLexer	scan/FlexLexer.cpp	23;"	d	file:
+yy_accept	scan/FlexLexer.cpp	/^static const flex_int16_t yy_accept[83] =$/;"	v	file:
+yy_at_bol	scan/FlexLexer.cpp	/^	int yy_at_bol;$/;"	m	struct:yy_buffer_state	file:
+yy_base	scan/FlexLexer.cpp	/^static const flex_int16_t yy_base[87] =$/;"	v	file:
+yy_bs_column	scan/FlexLexer.cpp	/^    int yy_bs_column; \/**< The column count. *\/$/;"	m	struct:yy_buffer_state	file:
+yy_bs_lineno	scan/FlexLexer.cpp	/^    int yy_bs_lineno; \/**< The line count. *\/$/;"	m	struct:yy_buffer_state	file:
+yy_buf_pos	scan/FlexLexer.cpp	/^	char *yy_buf_pos;		\/* current position in input buffer *\/$/;"	m	struct:yy_buffer_state	file:
+yy_buf_size	scan/FlexLexer.cpp	/^	int yy_buf_size;$/;"	m	struct:yy_buffer_state	file:
+yy_buffer_state	scan/FlexLexer.cpp	/^struct yy_buffer_state$/;"	s	file:
+yy_buffer_status	scan/FlexLexer.cpp	/^	int yy_buffer_status;$/;"	m	struct:yy_buffer_state	file:
+yy_ch_buf	scan/FlexLexer.cpp	/^	char *yy_ch_buf;		\/* input buffer *\/$/;"	m	struct:yy_buffer_state	file:
+yy_chk	scan/FlexLexer.cpp	/^static const flex_int16_t yy_chk[158] =$/;"	v	file:
+yy_create_buffer	scan/FlexLexer.cpp	/^	YY_BUFFER_STATE yyFlexLexer::yy_create_buffer( std::istream* file, int size )$/;"	f	class:yyFlexLexer
+yy_create_buffer	scan/FlexLexer.cpp	/^    YY_BUFFER_STATE yyFlexLexer::yy_create_buffer( std::istream& file, int size )$/;"	f	class:yyFlexLexer
+yy_def	scan/FlexLexer.cpp	/^static const flex_int16_t yy_def[87] =$/;"	v	file:
+yy_delete_buffer	scan/FlexLexer.cpp	/^    void yyFlexLexer::yy_delete_buffer( YY_BUFFER_STATE b )$/;"	f	class:yyFlexLexer
+yy_ec	scan/FlexLexer.cpp	/^static const YY_CHAR yy_ec[256] =$/;"	v	file:
+yy_fill_buffer	scan/FlexLexer.cpp	/^	int yy_fill_buffer;$/;"	m	struct:yy_buffer_state	file:
+yy_flex_strlen	scan/FlexLexer.cpp	/^static int yy_flex_strlen (const char * s )$/;"	f	file:
+yy_flex_strncpy	scan/FlexLexer.cpp	/^static void yy_flex_strncpy (char* s1, const char * s2, int n )$/;"	f	file:
+yy_flush_buffer	scan/FlexLexer.cpp	/^    void yyFlexLexer::yy_flush_buffer( YY_BUFFER_STATE b )$/;"	f	class:yyFlexLexer
+yy_get_next_buffer	scan/FlexLexer.cpp	/^int yyFlexLexer::yy_get_next_buffer()$/;"	f	class:yyFlexLexer
+yy_get_previous_state	scan/FlexLexer.cpp	/^    yy_state_type yyFlexLexer::yy_get_previous_state()$/;"	f	class:yyFlexLexer
+yy_init_buffer	scan/FlexLexer.cpp	/^    void yyFlexLexer::yy_init_buffer( YY_BUFFER_STATE b, std::istream& file )$/;"	f	class:yyFlexLexer
+yy_input_file	scan/FlexLexer.cpp	/^	std::streambuf* yy_input_file;$/;"	m	struct:yy_buffer_state	file:
+yy_is_interactive	scan/FlexLexer.cpp	/^	int yy_is_interactive;$/;"	m	struct:yy_buffer_state	file:
+yy_is_our_buffer	scan/FlexLexer.cpp	/^	int yy_is_our_buffer;$/;"	m	struct:yy_buffer_state	file:
+yy_load_buffer_state	scan/FlexLexer.cpp	/^    void yyFlexLexer::yy_load_buffer_state()$/;"	f	class:yyFlexLexer
+yy_meta	scan/FlexLexer.cpp	/^static const YY_CHAR yy_meta[47] =$/;"	v	file:
+yy_n_chars	scan/FlexLexer.cpp	/^	int yy_n_chars;$/;"	m	struct:yy_buffer_state	file:
+yy_new_buffer	scan/FlexLexer.cpp	276;"	d	file:
+yy_nxt	scan/FlexLexer.cpp	/^	flex_int32_t yy_nxt;$/;"	m	struct:yy_trans_info	file:
+yy_nxt	scan/FlexLexer.cpp	/^static const flex_int16_t yy_nxt[158] =$/;"	v	file:
+yy_pop_state	scan/FlexLexer.cpp	/^    void yyFlexLexer::yy_pop_state()$/;"	f	class:yyFlexLexer
+yy_push_state	scan/FlexLexer.cpp	/^    void yyFlexLexer::yy_push_state( int _new_state )$/;"	f	class:yyFlexLexer
+yy_set_bol	scan/FlexLexer.cpp	286;"	d	file:
+yy_set_interactive	scan/FlexLexer.cpp	277;"	d	file:
+yy_size_t	scan/FlexLexer.cpp	/^typedef size_t yy_size_t;$/;"	t	file:
+yy_switch_to_buffer	scan/FlexLexer.cpp	/^    void yyFlexLexer::yy_switch_to_buffer( YY_BUFFER_STATE new_buffer )$/;"	f	class:yyFlexLexer
+yy_top_state	scan/FlexLexer.cpp	/^    int yyFlexLexer::yy_top_state()$/;"	f	class:yyFlexLexer
+yy_trans_info	scan/FlexLexer.cpp	/^struct yy_trans_info$/;"	s	file:
+yy_try_NUL_trans	scan/FlexLexer.cpp	/^    yy_state_type yyFlexLexer::yy_try_NUL_trans( yy_state_type yy_current_state )$/;"	f	class:yyFlexLexer
+yy_verify	scan/FlexLexer.cpp	/^	flex_int32_t yy_verify;$/;"	m	struct:yy_trans_info	file:
+yyalloc	scan/FlexLexer.cpp	/^void *yyalloc (yy_size_t  size )$/;"	f
+yyconst	scan/FlexLexer.cpp	108;"	d	file:
+yyensure_buffer_stack	scan/FlexLexer.cpp	/^void yyFlexLexer::yyensure_buffer_stack(void)$/;"	f	class:yyFlexLexer
+yyfree	scan/FlexLexer.cpp	/^void yyfree (void * ptr )$/;"	f
+yyinput	scan/FlexLexer.cpp	/^    int yyFlexLexer::yyinput()$/;"	f	class:yyFlexLexer
+yyless	scan/FlexLexer.cpp	1780;"	d	file:
+yyless	scan/FlexLexer.cpp	1781;"	d	file:
+yyless	scan/FlexLexer.cpp	178;"	d	file:
+yymore	scan/FlexLexer.cpp	452;"	d	file:
+yynoreturn	scan/FlexLexer.cpp	111;"	d	file:
+yynoreturn	scan/FlexLexer.cpp	113;"	d	file:
+yypop_buffer_state	scan/FlexLexer.cpp	/^void yyFlexLexer::yypop_buffer_state (void)$/;"	f	class:yyFlexLexer
+yypush_buffer_state	scan/FlexLexer.cpp	/^void yyFlexLexer::yypush_buffer_state (YY_BUFFER_STATE new_buffer)$/;"	f	class:yyFlexLexer
+yyrealloc	scan/FlexLexer.cpp	/^void *yyrealloc  (void * ptr, yy_size_t  size )$/;"	f
+yyrestart	scan/FlexLexer.cpp	/^    void yyFlexLexer::yyrestart( std::istream& input_file )$/;"	f	class:yyFlexLexer
+yyrestart	scan/FlexLexer.cpp	/^void yyFlexLexer::yyrestart( std::istream* input_file )$/;"	f	class:yyFlexLexer
+yyterminate	scan/FlexLexer.cpp	520;"	d	file:
+yytext_ptr	scan/FlexLexer.cpp	301;"	d	file:
+yyunput	scan/FlexLexer.cpp	/^    void yyFlexLexer::yyunput( int c, char* yy_bp)$/;"	f	class:yyFlexLexer
+yywrap	scan/FlexLexer.cpp	/^int yyFlexLexer::yywrap() { return 1; }$/;"	f	class:yyFlexLexer
+~ASTNode	parse/ASTNodes.h	/^	virtual ~ASTNode() { }$/;"	f	class:uscc::parse::ASTNode
+~OptionGroup	uscc/ezOptionParser.hpp	/^  ~OptionGroup() {$/;"	f	class:ez::OptionGroup
+~Parser	parse/Parse.cpp	/^Parser::~Parser()$/;"	f	class:Parser
+~ezOptionParser	uscc/ezOptionParser.hpp	/^ezOptionParser::~ezOptionParser() {$/;"	f	class:ez::ezOptionParser
+~ezOptionValidator	uscc/ezOptionParser.hpp	/^ezOptionValidator::~ezOptionValidator() {$/;"	f	class:ez::ezOptionValidator
+~yyFlexLexer	scan/FlexLexer.cpp	/^yyFlexLexer::~yyFlexLexer()$/;"	f	class:yyFlexLexer

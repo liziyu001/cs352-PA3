@@ -342,6 +342,21 @@ AST_EMIT(ASTBinaryCmpOp)
 	Value* retVal = nullptr;
 	
 	// PA3: Implement
+	IRBuilder<> build(ctx.mBlock);
+
+	Value* lhsVal = mLHS->emitIR(ctx);
+	Value* rhsVal = mRHS->emitIR(ctx);
+	if (mOp == scan::Token::Tokens::EqualTo) {
+		retVal = build.CreateICmpEQ(lhsVal, rhsVal, "equalTo");
+	} else if (mOp == scan::Token::Tokens::NotEqual) {
+		retVal = build.CreateICmpNE(lhsVal, rhsVal, "notEqual");
+	} else if (mOp == scan::Token::Tokens::LessThan) {
+		retVal = build.CreateICmpSLT(lhsVal, rhsVal, "lessThan");
+	} else if (mOp == scan::Token::Tokens::GreaterThan) {
+		retVal = build.CreateICmpSGT(lhsVal, rhsVal, "greaterThan");
+	}
+
+	retVal = build.CreateZExt(retVal, llvm::Type::getInt32Ty(ctx.mGlobal), "zext");
 	
 	return retVal;
 }
@@ -351,6 +366,21 @@ AST_EMIT(ASTBinaryMathOp)
 	Value* retVal = nullptr;
 	
 	// PA3: Implement
+	IRBuilder<> build(ctx.mBlock);
+
+	Value* lhsVal = mLHS->emitIR(ctx);
+	Value* rhsVal = mRHS->emitIR(ctx);
+	if (mOp == scan::Token::Tokens::Plus) {
+		retVal = build.CreateAdd(lhsVal, rhsVal, "add");
+	} else if (mOp == scan::Token::Tokens::Minus) {
+		retVal = build.CreateSub(lhsVal, rhsVal, "minus");
+	} else if (mOp == scan::Token::Tokens::Mult) {
+		retVal = build.CreateMul(lhsVal, rhsVal, "mult");
+	} else if (mOp == scan::Token::Tokens::Div) {
+		retVal = build.CreateSDiv(lhsVal, rhsVal, "div");
+	} else if (mOp == scan::Token::Tokens::Mod) {
+		retVal = build.CreateSRem(lhsVal, rhsVal, "mod");
+	}
 	
 	return retVal;
 }
@@ -371,6 +401,11 @@ AST_EMIT(ASTConstantExpr)
 	Value* retVal = nullptr;
 	
 	// PA3: Implement
+	if (getType() == Type::Int) {
+		retVal = ConstantInt::get(llvm::Type::getInt32Ty(ctx.mGlobal), getValue());
+	} else if (getType() == Type::Char) {
+		retVal = ConstantInt::get(llvm::Type::getInt8Ty(ctx.mGlobal), getValue());
+	}
 	
 	return retVal;
 }
@@ -524,7 +559,14 @@ AST_EMIT(ASTDecl)
 // Statements
 AST_EMIT(ASTCompoundStmt)
 {
-	// PA3: Implement
+	// PA3: 
+	for (std::shared_ptr<ASTDecl> decl : mDecls) {
+		decl->emitIR(ctx);
+	}
+
+	for (std::shared_ptr<ASTStmt> stmt : mStmts) {
+		stmt->emitIR(ctx);
+	}
 	
 	return nullptr;
 }
@@ -572,7 +614,12 @@ AST_EMIT(ASTWhileStmt)
 AST_EMIT(ASTReturnStmt)
 {
 	// PA3: Implement
-	
+	IRBuilder<> build(ctx.mBlock);
+	if (!mExpr) {
+		build.CreateRetVoid();
+	} else {
+		build.CreateRet(mExpr->emitIR(ctx));
+	}
 	return nullptr;
 }
 
@@ -580,6 +627,7 @@ AST_EMIT(ASTExprStmt)
 {
 	// PA3: Implement
 	// Just emit the expression, don't care about the value
+	mExpr->emitIR(ctx);
 	return nullptr;
 }
 
