@@ -1,0 +1,14 @@
+Program:
+---Function: int main
+------CompoundStmt:
+---------Decl: int[1] a
+---------AssignArrayStmt:
+------------ArraySub: a
+---------------ConstantExpr: 0
+------------ConstantExpr: 1
+---------ReturnStmt:
+------------ConstantExpr: 0
+Symbols:
+function main
+function printf
+---int[] a
