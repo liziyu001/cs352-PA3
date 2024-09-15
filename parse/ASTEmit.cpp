@@ -389,8 +389,11 @@ AST_EMIT(ASTBinaryMathOp)
 AST_EMIT(ASTNotExpr)
 {
 	Value* retVal = nullptr;
-	
+	IRBuilder<> build(ctx.mBlock);
 	// PA3: Implement
+
+	retVal = build.CreateICmpEQ(mExpr->emitIR(ctx), ConstantInt::get(llvm::Type::getInt32Ty(ctx.mGlobal), 0), "equalToZero");
+	retVal = build.CreateZExt(retVal, llvm::Type::getInt32Ty(ctx.mGlobal), "zext");
 	
 	return retVal;
 }
@@ -486,8 +489,13 @@ AST_EMIT(ASTFuncExpr)
 AST_EMIT(ASTIncExpr)
 {
 	Value* retVal = nullptr;
+	IRBuilder<> build(ctx.mBlock);
 	
 	// PA3: Implement
+	
+	retVal = mIdent.readFrom(ctx);
+	retVal = build.CreateAdd(retVal, llvm::ConstantInt::get(llvm::Type::getInt8Ty(ctx.mGlobal), 1), "incremented");
+	mIdent.writeTo(ctx, retVal);
 	
 	return retVal;
 }
@@ -495,8 +503,12 @@ AST_EMIT(ASTIncExpr)
 AST_EMIT(ASTDecExpr)
 {
 	Value* retVal = nullptr;
+	IRBuilder<> build(ctx.mBlock);
 	
 	// PA3: Implement
+	retVal = mIdent.readFrom(ctx);
+	retVal = build.CreateSub(retVal, llvm::ConstantInt::get(llvm::Type::getInt8Ty(ctx.mGlobal), 1), "decremented");
+	mIdent.writeTo(ctx, retVal);
 	
 	return retVal;
 }
