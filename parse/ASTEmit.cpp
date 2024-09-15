@@ -599,6 +599,8 @@ AST_EMIT(ASTAssignStmt)
 	// assignments to happen later for full arrays
 	
 	// PA3: Implement
+	Value* exprVal = mExpr->emitIR(ctx);
+	mIdent.writeTo(ctx, exprVal);
 	
 	return nullptr;
 }
@@ -622,6 +624,45 @@ AST_EMIT(ASTAssignArrayStmt)
 AST_EMIT(ASTIfStmt)
 {
 	// PA3: Implement
+	IRBuilder<> build(ctx.mBlock);
+	//BasicBlock *preheader = BasicBlock::Create(ctx.mGlobal, "preheader", ctx.mFunc);
+	BasicBlock *thenBB = BasicBlock::Create(ctx.mGlobal, "if.then", ctx.mFunc);
+	BasicBlock *elseBB;
+	if (mElseStmt) {
+		elseBB = BasicBlock::Create(ctx.mGlobal, "if.else", ctx.mFunc);
+	}
+	BasicBlock *endBB = BasicBlock::Create(ctx.mGlobal, "if.end", ctx.mFunc);
+	
+
+	//Fill in condition block
+	Value *cond = mExpr->emitIR(ctx); //zext value from ASTBinaryCmpOp
+	//convert to int1 condition for branching
+	build.SetInsertPoint(ctx.mBlock);
+	cond = build.CreateICmpNE(cond, ConstantInt::get(llvm::Type::getInt32Ty(ctx.mGlobal), 0), "toInt1");
+	if (mElseStmt) {
+		build.CreateCondBr(cond, thenBB, elseBB);
+	} else {
+		build.CreateCondBr(cond, thenBB, endBB);
+	}
+
+	//Fill in then block
+	ctx.mBlock = thenBB;
+	mThenStmt->emitIR(ctx);
+
+	build.SetInsertPoint(ctx.mBlock);
+	build.CreateBr(endBB);
+
+	//Fill in else block
+	if (mElseStmt) {
+		ctx.mBlock = elseBB;
+		mElseStmt->emitIR(ctx);
+
+		build.SetInsertPoint(ctx.mBlock);
+		build.CreateBr(endBB);
+	}
+	
+	//Push the end block
+	ctx.mBlock = endBB;
 	
 	return nullptr;
 }
@@ -632,8 +673,8 @@ AST_EMIT(ASTWhileStmt)
 	IRBuilder<> build(ctx.mBlock);
 	//BasicBlock *preheader = BasicBlock::Create(ctx.mGlobal, "preheader", ctx.mFunc);
 	BasicBlock *condBB = BasicBlock::Create(ctx.mGlobal, "while.cond", ctx.mFunc);
-	BasicBlock *bodyBB = BasicBlock::Create(ctx.mGlobal, "while.body");
-	BasicBlock *endBB = BasicBlock::Create(ctx.mGlobal, "while.end");
+	BasicBlock *bodyBB = BasicBlock::Create(ctx.mGlobal, "while.body", ctx.mFunc);
+	BasicBlock *endBB = BasicBlock::Create(ctx.mGlobal, "while.end", ctx.mFunc);
 
 	//jump to condition block
 	build.CreateBr(condBB);
@@ -649,7 +690,6 @@ AST_EMIT(ASTWhileStmt)
 
 	//Fill in body block
 	ctx.mBlock = bodyBB;
-	ctx.mFunc->getBasicBlockList().push_back(bodyBB);
 	mLoopStmt->emitIR(ctx);
 
 	build.SetInsertPoint(ctx.mBlock);
@@ -657,7 +697,6 @@ AST_EMIT(ASTWhileStmt)
 	
 	//Push the end block
 	ctx.mBlock = endBB;
-	ctx.mFunc->getBasicBlockList().push_back(endBB);
 	
 	return nullptr;
 }
