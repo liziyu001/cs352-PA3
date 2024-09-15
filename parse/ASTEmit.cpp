@@ -494,7 +494,12 @@ AST_EMIT(ASTIncExpr)
 	// PA3: Implement
 	
 	retVal = mIdent.readFrom(ctx);
-	retVal = build.CreateAdd(retVal, llvm::ConstantInt::get(llvm::Type::getInt8Ty(ctx.mGlobal), 1), "incremented");
+	if (mIdent.getType() == Type::Int) {
+		retVal = build.CreateAdd(retVal, llvm::ConstantInt::get(llvm::Type::getInt32Ty(ctx.mGlobal), 1), "incremented");
+	} else if (mIdent.getType() == Type::Char) {
+		retVal = build.CreateAdd(retVal, llvm::ConstantInt::get(llvm::Type::getInt8Ty(ctx.mGlobal), 1), "incremented");
+	}
+	
 	mIdent.writeTo(ctx, retVal);
 	
 	return retVal;
@@ -507,7 +512,12 @@ AST_EMIT(ASTDecExpr)
 	
 	// PA3: Implement
 	retVal = mIdent.readFrom(ctx);
-	retVal = build.CreateSub(retVal, llvm::ConstantInt::get(llvm::Type::getInt8Ty(ctx.mGlobal), 1), "decremented");
+	if (mIdent.getType() == Type::Int) {
+		retVal = build.CreateSub(retVal, llvm::ConstantInt::get(llvm::Type::getInt32Ty(ctx.mGlobal), 1), "decremented");
+	} else if (mIdent.getType() == Type::Char) {
+		retVal = build.CreateSub(retVal, llvm::ConstantInt::get(llvm::Type::getInt8Ty(ctx.mGlobal), 1), "decremented");
+	}
+	
 	mIdent.writeTo(ctx, retVal);
 	
 	return retVal;
@@ -619,6 +629,35 @@ AST_EMIT(ASTIfStmt)
 AST_EMIT(ASTWhileStmt)
 {
 	// PA3: Implement
+	IRBuilder<> build(ctx.mBlock);
+	//BasicBlock *preheader = BasicBlock::Create(ctx.mGlobal, "preheader", ctx.mFunc);
+	BasicBlock *condBB = BasicBlock::Create(ctx.mGlobal, "while.cond", ctx.mFunc);
+	BasicBlock *bodyBB = BasicBlock::Create(ctx.mGlobal, "while.body");
+	BasicBlock *endBB = BasicBlock::Create(ctx.mGlobal, "while.end");
+
+	//jump to condition block
+	build.CreateBr(condBB);
+	
+	//Fill in condition block
+	ctx.mBlock = condBB;
+
+	Value *cond = mExpr->emitIR(ctx); //zext value from ASTBinaryCmpOp
+	//convert to int1 condition for branching
+	build.SetInsertPoint(ctx.mBlock);
+	cond = build.CreateICmpNE(cond, ConstantInt::get(llvm::Type::getInt32Ty(ctx.mGlobal), 0), "toInt1");
+	build.CreateCondBr(cond, bodyBB, endBB);
+
+	//Fill in body block
+	ctx.mBlock = bodyBB;
+	ctx.mFunc->getBasicBlockList().push_back(bodyBB);
+	mLoopStmt->emitIR(ctx);
+
+	build.SetInsertPoint(ctx.mBlock);
+	build.CreateBr(condBB);
+	
+	//Push the end block
+	ctx.mBlock = endBB;
+	ctx.mFunc->getBasicBlockList().push_back(endBB);
 	
 	return nullptr;
 }
