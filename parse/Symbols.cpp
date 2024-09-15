@@ -84,6 +84,7 @@ llvm::Value* Identifier::readFrom(CodeContext& ctx) noexcept
 	// PA4: Rewrite this entire function
 
 	llvm::Value* retVal = nullptr;
+	llvm::IRBuilder<> build(ctx.mBlock);
 	// Special case for arrays local to this function
 	if (isArray() && getArrayCount() != -1)
 	{
@@ -92,6 +93,7 @@ llvm::Value* Identifier::readFrom(CodeContext& ctx) noexcept
 	else
 	{
 		// PA3: Load from the memory address of this identifier
+		retVal = build.CreateLoad(getAddress(), "load");
 	}
 	return retVal;
 }
@@ -99,6 +101,7 @@ llvm::Value* Identifier::readFrom(CodeContext& ctx) noexcept
 void Identifier::writeTo(CodeContext& ctx, llvm::Value* value) noexcept
 {
 	// PA4: Rewrite this entire function
+	llvm::IRBuilder<> build(ctx.mBlock);
 
 	// Special case for arrays local to this function
 	if (isArray() && getArrayCount() != -1)
@@ -108,6 +111,7 @@ void Identifier::writeTo(CodeContext& ctx, llvm::Value* value) noexcept
 	else
 	{
 		// PA3: Write to memory address of this identifier
+		build.CreateStore(value, getAddress());
 	}
 }
 
@@ -276,6 +280,13 @@ void SymbolTable::ScopeTable::emitIR(CodeContext& ctx)
 			// and save the address.
 			// (Make sure you check for function arguments, which
 			// will already have a value which we needs to be copied)
+			llvm::Type* type = ident->llvmType(false);
+			decl = build.CreateAlloca(type, nullptr, name);
+
+			if (ident->getAddress()) {
+				build.CreateStore(ident->getAddress(), decl);
+			}
+			ident->setAddress(decl);
 			
 		}
 	}
