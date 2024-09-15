@@ -280,7 +280,7 @@ void SymbolTable::ScopeTable::emitIR(CodeContext& ctx)
 			// and save the address.
 			// (Make sure you check for function arguments, which
 			// will already have a value which we needs to be copied)
-			llvm::Type* type = ident->llvmType(false);
+			llvm::Type* type = ident->llvmType(true);
 			decl = build.CreateAlloca(type, nullptr, name);
 
 			if (ident->getAddress()) {
